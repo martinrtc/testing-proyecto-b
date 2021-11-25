@@ -5,6 +5,8 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { makeStyles } from '@mui/styles';
+import Movies from './views/Movies';
+import Functions from './views/Functions';
 
 function NavbarTabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -62,19 +64,14 @@ export default function BasicTabs() {
                             }
                         }}>
                         <Tab label={<b className={value === 0 ? classes.selected : classes.nonSelected}>Funciones</b>} />
-                        <Tab label={<b className={value === 1 ? classes.selected : classes.nonSelected}>Películas</b>} />
-                        <Tab label={<b className={value === 2 ? classes.selected : classes.nonSelected}>Crear Película</b>} />
-                        
+                        <Tab label={<b className={value === 1 ? classes.selected : classes.nonSelected}>Películas</b>} />     
                     </Tabs>
                 </Box>
                     <NavbarTabPanel value={value} index={0}>
-                        Funciones
+                        <Functions />
                     </NavbarTabPanel>
                     <NavbarTabPanel value={value} index={1}>
-                        Películas
-                    </NavbarTabPanel>
-                    <NavbarTabPanel value={value} index={2}>
-                        Crear Película
+                        <Movies />
                     </NavbarTabPanel>
                 </Box>
         </div>

@@ -2342,3 +2342,1802 @@ Entrypoint hello_react = js/hello_react-b5460fa248c2f723c3fe.js js/hello_react-b
 Completed 200 OK in 6792ms (Views: 6790.9ms | Allocations: 7298)
 
 
+Started GET "/" for ::1 at 2021-11-25 14:11:54 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: a1b6b0c05cba0a1579bf
+Version: webpack 4.46.0
+Time: 5490ms
+Built at: 2021-11-25 14:12:00
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-0b78cc205ffe68f3328c.js   4.71 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-0b78cc205ffe68f3328c.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-0b78cc205ffe68f3328c.js js/hello_react-0b78cc205ffe68f3328c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 831 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6858.8ms | Allocations: 6923)
+Completed 200 OK in 6860ms (Views: 6859.4ms | Allocations: 7298)
+
+
+Started GET "/" for ::1 at 2021-11-25 14:13:29 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: c58e439bc4438736a36b
+Version: webpack 4.46.0
+Time: 5804ms
+Built at: 2021-11-25 14:13:36
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-9420746e6da567fd3525.js   4.71 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-9420746e6da567fd3525.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-9420746e6da567fd3525.js js/hello_react-9420746e6da567fd3525.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 831 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7361.6ms | Allocations: 6927)
+Completed 200 OK in 7363ms (Views: 7362.5ms | Allocations: 7302)
+
+
+Started GET "/" for ::1 at 2021-11-25 14:21:16 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 2f0044c1971f975a84ba
+Version: webpack 4.46.0
+Time: 5909ms
+Built at: 2021-11-25 14:21:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-9d7bc0ed29043bbe6bfb.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-9d7bc0ed29043bbe6bfb.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-9d7bc0ed29043bbe6bfb.js js/hello_react-9d7bc0ed29043bbe6bfb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 833 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8798.0ms | Allocations: 7003)
+Completed 200 OK in 8800ms (Views: 8799.3ms | Allocations: 7378)
+
+
+Started GET "/" for ::1 at 2021-11-25 14:27:02 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 08ae915d7ce26b25cac5
+Version: webpack 4.46.0
+Time: 6756ms
+Built at: 2021-11-25 14:27:11
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-73070cd43e02522679de.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-73070cd43e02522679de.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-73070cd43e02522679de.js js/hello_react-73070cd43e02522679de.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8978.0ms | Allocations: 7040)
+Completed 200 OK in 8980ms (Views: 8978.7ms | Allocations: 7418)
+
+
+Started GET "/" for ::1 at 2021-11-25 14:27:19 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: dc794635f1cb8f9b69e7
+Version: webpack 4.46.0
+Time: 5415ms
+Built at: 2021-11-25 14:27:26
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-8edc3902d5fb01975bb8.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-8edc3902d5fb01975bb8.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-8edc3902d5fb01975bb8.js js/hello_react-8edc3902d5fb01975bb8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6824.9ms | Allocations: 7031)
+Completed 200 OK in 6827ms (Views: 6825.8ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:04:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5324fe1a54a46a70e73a
+Version: webpack 4.46.0
+Time: 5382ms
+Built at: 2021-11-25 15:04:34
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-3d5ec4df9d5e9bb27bd9.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-3d5ec4df9d5e9bb27bd9.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-3d5ec4df9d5e9bb27bd9.js js/hello_react-3d5ec4df9d5e9bb27bd9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+ERROR in ./app/javascript/components/views/viewComponents/Reservation.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/Martin/Desktop/testing-proyecto-b/app/javascript/components/views/viewComponents/Reservation.jsx: Unexpected token, expected "," (12:20)
+
+  10 |                 row.forEach(seat => 
+  11 |                     {seat === 0 && <Button>0</Button>}
+> 12 |                     {seat === 1 && <Button>1</Button>}
+     |                     ^
+  13 |                 )
+  14 |             <br></br>
+  15 |             )}
+    at Object._raise (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:541:17)
+    at Object.raiseWithData (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:534:17)
+    at Object.raise (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:495:17)
+    at Object.unexpected (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:3580:16)
+    at Object.expect (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:3554:28)
+    at Object.parseCallExpressionArguments (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11775:14)
+    at Object.parseCoverCallAndAsyncArrowHead (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11698:29)
+    at Object.parseSubscript (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11628:19)
+    at Object.parseSubscripts (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11601:19)
+    at Object.parseExprSubscripts (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11590:17)
+    at Object.parseUpdate (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11564:21)
+    at Object.parseMaybeUnary (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11539:23)
+    at Object.parseMaybeUnaryOrPrivate (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11353:61)
+    at Object.parseExprOps (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11360:23)
+    at Object.parseMaybeConditional (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11330:23)
+    at Object.parseMaybeAssign (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11290:21)
+    at Object.parseFunctionBody (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:12779:24)
+    at Object.parseArrowExpression (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:12758:10)
+    at Object.parseExprAtom (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:12021:25)
+    at Object.parseExprAtom (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7477:20)
+    at Object.parseExprSubscripts (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11584:23)
+    at Object.parseUpdate (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11564:21)
+    at Object.parseMaybeUnary (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11539:23)
+    at Object.parseMaybeUnaryOrPrivate (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11353:61)
+    at Object.parseExprOps (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11360:23)
+    at Object.parseMaybeConditional (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11330:23)
+    at Object.parseMaybeAssign (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11290:21)
+    at /Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11248:39
+    at Object.allowInAnd (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:13137:12)
+    at Object.parseMaybeAssignAllowIn (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11248:17)
+ @ ./app/javascript/components/views/Functions.jsx 16:0-55 34:62-73
+ @ ./app/javascript/components/NavbarTabPanel.jsx
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7625.3ms | Allocations: 6955)
+Completed 200 OK in 7627ms (Views: 7626.0ms | Allocations: 7330)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:05:39 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 1ba696b2f22411503abe
+Version: webpack 4.46.0
+Time: 5168ms
+Built at: 2021-11-25 15:05:45
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-30b77ea2cc1b07185b64.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-30b77ea2cc1b07185b64.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-30b77ea2cc1b07185b64.js js/hello_react-30b77ea2cc1b07185b64.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+ERROR in ./app/javascript/components/views/viewComponents/Reservation.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/Martin/Desktop/testing-proyecto-b/app/javascript/components/views/viewComponents/Reservation.jsx: Unexpected token (13:17)
+
+  11 |                 { seat === 0 ? <Button>0</Button> : <Button>1</Button>}
+  12 |                 )
+> 13 |             <br></br>
+     |                  ^
+  14 |             )}
+  15 |         </Box>
+  16 |     );
+    at Object._raise (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:541:17)
+    at Object.raiseWithData (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:534:17)
+    at Object.raise (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:495:17)
+    at Object.unexpected (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:3580:16)
+    at Object.jsxParseIdentifier (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7250:12)
+    at Object.jsxParseNamespacedName (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7260:23)
+    at Object.jsxParseElementName (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7271:21)
+    at Object.jsxParseOpeningElementAt (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7358:22)
+    at Object.jsxParseElementAt (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7391:33)
+    at Object.jsxParseElement (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7465:17)
+    at Object.parseExprAtom (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7472:19)
+    at Object.parseExprSubscripts (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11584:23)
+    at Object.parseUpdate (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11564:21)
+    at Object.parseMaybeUnary (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11539:23)
+    at Object.parseMaybeUnaryOrPrivate (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11353:61)
+    at Object.parseExprOpBaseRightExpr (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11467:34)
+    at Object.parseExprOpRightExpr (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11460:21)
+    at Object.parseExprOp (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11417:27)
+    at Object.parseExprOp (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11425:21)
+    at Object.parseExprOps (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11366:17)
+    at Object.parseMaybeConditional (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11330:23)
+    at Object.parseMaybeAssign (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11290:21)
+    at Object.parseFunctionBody (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:12779:24)
+    at Object.parseArrowExpression (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:12758:10)
+    at Object.parseExprAtom (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:12021:25)
+    at Object.parseExprAtom (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7477:20)
+    at Object.parseExprSubscripts (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11584:23)
+    at Object.parseUpdate (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11564:21)
+    at Object.parseMaybeUnary (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11539:23)
+    at Object.parseMaybeUnaryOrPrivate (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11353:61)
+ @ ./app/javascript/components/views/Functions.jsx 16:0-55 34:62-73
+ @ ./app/javascript/components/NavbarTabPanel.jsx
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6566.7ms | Allocations: 6952)
+Completed 200 OK in 6568ms (Views: 6567.6ms | Allocations: 7331)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:05:55 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: ee6a49fea64a1b09f8c3
+Version: webpack 4.46.0
+Time: 5264ms
+Built at: 2021-11-25 15:06:02
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-96ac94425c58ebfb07bb.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-96ac94425c58ebfb07bb.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-96ac94425c58ebfb07bb.js js/hello_react-96ac94425c58ebfb07bb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6582.7ms | Allocations: 7038)
+Completed 200 OK in 6586ms (Views: 6583.7ms | Allocations: 7413)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:06:36 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 87041bdf9d03d500fa66
+Version: webpack 4.46.0
+Time: 5353ms
+Built at: 2021-11-25 15:06:43
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-af65f975b40ffcccccfd.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-af65f975b40ffcccccfd.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-af65f975b40ffcccccfd.js js/hello_react-af65f975b40ffcccccfd.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6615.6ms | Allocations: 7031)
+Completed 200 OK in 6618ms (Views: 6616.8ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:09:13 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: ee6a49fea64a1b09f8c3
+Version: webpack 4.46.0
+Time: 5283ms
+Built at: 2021-11-25 15:09:20
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-96ac94425c58ebfb07bb.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-96ac94425c58ebfb07bb.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-96ac94425c58ebfb07bb.js js/hello_react-96ac94425c58ebfb07bb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6617.7ms | Allocations: 7032)
+Completed 200 OK in 6620ms (Views: 6618.6ms | Allocations: 7411)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:09:45 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: decb903733c1c4664192
+Version: webpack 4.46.0
+Time: 5103ms
+Built at: 2021-11-25 15:09:51
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-238fe3c507065f88bd49.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-238fe3c507065f88bd49.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-238fe3c507065f88bd49.js js/hello_react-238fe3c507065f88bd49.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6416.1ms | Allocations: 7031)
+Completed 200 OK in 6418ms (Views: 6416.8ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:11:17 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 0b86831fb19c4352bcf0
+Version: webpack 4.46.0
+Time: 5811ms
+Built at: 2021-11-25 15:11:24
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-490a5df7b32111204552.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-490a5df7b32111204552.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-490a5df7b32111204552.js js/hello_react-490a5df7b32111204552.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7979.4ms | Allocations: 7035)
+Completed 200 OK in 7981ms (Views: 7980.3ms | Allocations: 7410)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:12:13 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 4cff87c226608ff82e57
+Version: webpack 4.46.0
+Time: 6452ms
+Built at: 2021-11-25 15:12:21
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-fd33eb0be61c6208733b.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-fd33eb0be61c6208733b.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-fd33eb0be61c6208733b.js js/hello_react-fd33eb0be61c6208733b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8562.3ms | Allocations: 7037)
+Completed 200 OK in 8564ms (Views: 8563.0ms | Allocations: 7416)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:12:25 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 5700)
+Completed 200 OK in 17ms (Views: 16.2ms | Allocations: 6075)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:12:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 5700)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 6075)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:13:03 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: dcea4d66eadf9ca89883
+Version: webpack 4.46.0
+Time: 5497ms
+Built at: 2021-11-25 15:13:10
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-aa1a99a3c04306ec79f5.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-aa1a99a3c04306ec79f5.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-aa1a99a3c04306ec79f5.js js/hello_react-aa1a99a3c04306ec79f5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7510.6ms | Allocations: 7031)
+Completed 200 OK in 7512ms (Views: 7511.3ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:14:20 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 097d64826839cb77fd9e
+Version: webpack 4.46.0
+Time: 5337ms
+Built at: 2021-11-25 15:14:27
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-91b1a13f7c75022926a2.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-91b1a13f7c75022926a2.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-91b1a13f7c75022926a2.js js/hello_react-91b1a13f7c75022926a2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6807.5ms | Allocations: 7035)
+Completed 200 OK in 6809ms (Views: 6808.3ms | Allocations: 7414)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:15:45 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 105f01fd45e8dd51745e
+Version: webpack 4.46.0
+Time: 5336ms
+Built at: 2021-11-25 15:15:52
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-e9932eb48899a006ec8a.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-e9932eb48899a006ec8a.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-e9932eb48899a006ec8a.js js/hello_react-e9932eb48899a006ec8a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6731.4ms | Allocations: 7030)
+Completed 200 OK in 6733ms (Views: 6732.2ms | Allocations: 7405)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:18:16 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: e7abfcc1a8e56d6b565f
+Version: webpack 4.46.0
+Time: 5421ms
+Built at: 2021-11-25 15:18:23
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-36db222bf108c45b2315.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-36db222bf108c45b2315.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-36db222bf108c45b2315.js js/hello_react-36db222bf108c45b2315.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6780.4ms | Allocations: 7031)
+Completed 200 OK in 6782ms (Views: 6780.9ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:23:56 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: f1ca19087d431b0c5c19
+Version: webpack 4.46.0
+Time: 5632ms
+Built at: 2021-11-25 15:24:03
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-d74472275701b3da6178.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-d74472275701b3da6178.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-d74472275701b3da6178.js js/hello_react-d74472275701b3da6178.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7270.7ms | Allocations: 7038)
+Completed 200 OK in 7273ms (Views: 7271.6ms | Allocations: 7417)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:28:18 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: a8058735648f929fd665
+Version: webpack 4.46.0
+Time: 5723ms
+Built at: 2021-11-25 15:28:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-67bed413bfbc87ff9069.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-67bed413bfbc87ff9069.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-67bed413bfbc87ff9069.js js/hello_react-67bed413bfbc87ff9069.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7300.9ms | Allocations: 7031)
+Completed 200 OK in 7303ms (Views: 7302.3ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:28:46 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 5700)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 6075)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:28:53 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 5700)
+Completed 200 OK in 13ms (Views: 12.3ms | Allocations: 6079)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:29:49 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 28e8b79434ad7f26a030
+Version: webpack 4.46.0
+Time: 5385ms
+Built at: 2021-11-25 15:29:56
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-1612b2b1c1749e587b15.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-1612b2b1c1749e587b15.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-1612b2b1c1749e587b15.js js/hello_react-1612b2b1c1749e587b15.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6987.8ms | Allocations: 7031)
+Completed 200 OK in 6990ms (Views: 6988.7ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:30:08 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 48a49e65e978b6f4980e
+Version: webpack 4.46.0
+Time: 5269ms
+Built at: 2021-11-25 15:30:15
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-abcb199b8babcbdfd2e5.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-abcb199b8babcbdfd2e5.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-abcb199b8babcbdfd2e5.js js/hello_react-abcb199b8babcbdfd2e5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6939.8ms | Allocations: 7031)
+Completed 200 OK in 6942ms (Views: 6940.6ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:30:42 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: c3aa2644aeb914bc9836
+Version: webpack 4.46.0
+Time: 5324ms
+Built at: 2021-11-25 15:30:49
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-0a9b26379487d4017ed8.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-0a9b26379487d4017ed8.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-0a9b26379487d4017ed8.js js/hello_react-0a9b26379487d4017ed8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6783.8ms | Allocations: 7030)
+Completed 200 OK in 6786ms (Views: 6784.5ms | Allocations: 7405)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:31:11 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: e211e6f6e5e6c7e08173
+Version: webpack 4.46.0
+Time: 6174ms
+Built at: 2021-11-25 15:31:19
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-1858007ae242f31837ba.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-1858007ae242f31837ba.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-1858007ae242f31837ba.js js/hello_react-1858007ae242f31837ba.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7630.2ms | Allocations: 7034)
+Completed 200 OK in 7632ms (Views: 7631.1ms | Allocations: 7413)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:31:31 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: e35ca55028e30bc885fc
+Version: webpack 4.46.0
+Time: 5202ms
+Built at: 2021-11-25 15:31:37
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-9d68ebe072e81b779ae6.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-9d68ebe072e81b779ae6.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-9d68ebe072e81b779ae6.js js/hello_react-9d68ebe072e81b779ae6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6642.2ms | Allocations: 7031)
+Completed 200 OK in 6644ms (Views: 6643.3ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:32:19 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: bfa523048a6fd4877f43
+Version: webpack 4.46.0
+Time: 5195ms
+Built at: 2021-11-25 15:32:26
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-90a86f3ca7c0322a5bc1.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-90a86f3ca7c0322a5bc1.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-90a86f3ca7c0322a5bc1.js js/hello_react-90a86f3ca7c0322a5bc1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6607.6ms | Allocations: 7033)
+Completed 200 OK in 6610ms (Views: 6608.7ms | Allocations: 7408)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:33:00 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: e8e0b6b62ce25636ab67
+Version: webpack 4.46.0
+Time: 5301ms
+Built at: 2021-11-25 15:33:07
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-ffea61b1984b18d858c1.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-ffea61b1984b18d858c1.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-ffea61b1984b18d858c1.js js/hello_react-ffea61b1984b18d858c1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6642.5ms | Allocations: 7035)
+Completed 200 OK in 6644ms (Views: 6643.2ms | Allocations: 7414)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:34:09 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 6346ed20a1c11fc3a164
+Version: webpack 4.46.0
+Time: 6043ms
+Built at: 2021-11-25 15:34:16
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-21f10994d7ebc180a2e9.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-21f10994d7ebc180a2e9.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-21f10994d7ebc180a2e9.js js/hello_react-21f10994d7ebc180a2e9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7656.6ms | Allocations: 7034)
+Completed 200 OK in 7658ms (Views: 7657.3ms | Allocations: 7409)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:35:29 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 05ff78d7d332c91640c4
+Version: webpack 4.46.0
+Time: 5272ms
+Built at: 2021-11-25 15:35:35
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-1f999637345784021685.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-1f999637345784021685.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-1f999637345784021685.js js/hello_react-1f999637345784021685.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6699.2ms | Allocations: 7031)
+Completed 200 OK in 6701ms (Views: 6700.0ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:44:00 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 2cdbdeb4edb843ca66ff
+Version: webpack 4.46.0
+Time: 5251ms
+Built at: 2021-11-25 15:44:06
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-f4e2f4aef518fa7c43a5.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-f4e2f4aef518fa7c43a5.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-f4e2f4aef518fa7c43a5.js js/hello_react-f4e2f4aef518fa7c43a5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6685.9ms | Allocations: 7036)
+Completed 200 OK in 6687ms (Views: 6686.6ms | Allocations: 7414)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:44:23 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: bbd95b961f0535e0bbf3
+Version: webpack 4.46.0
+Time: 5203ms
+Built at: 2021-11-25 15:44:30
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-aaa8b412d0879ca9bfd6.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-aaa8b412d0879ca9bfd6.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-aaa8b412d0879ca9bfd6.js js/hello_react-aaa8b412d0879ca9bfd6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6549.1ms | Allocations: 7103)
+Completed 200 OK in 6551ms (Views: 6550.4ms | Allocations: 7478)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:44:52 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 12689751649972bcbc73
+Version: webpack 4.46.0
+Time: 5481ms
+Built at: 2021-11-25 15:44:58
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-9ec72763d190e749dc5b.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-9ec72763d190e749dc5b.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-9ec72763d190e749dc5b.js js/hello_react-9ec72763d190e749dc5b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6929.7ms | Allocations: 7031)
+Completed 200 OK in 6931ms (Views: 6930.5ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:47:00 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: f6b9322dac269affdc6c
+Version: webpack 4.46.0
+Time: 5313ms
+Built at: 2021-11-25 15:47:07
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-ff07cedfa64616964ef6.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-ff07cedfa64616964ef6.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-ff07cedfa64616964ef6.js js/hello_react-ff07cedfa64616964ef6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6613.6ms | Allocations: 7036)
+Completed 200 OK in 6615ms (Views: 6614.2ms | Allocations: 7414)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:48:11 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: c9ff3a093c7b30a6f566
+Version: webpack 4.46.0
+Time: 5236ms
+Built at: 2021-11-25 15:48:18
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-87d64e94fa4844a56970.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-87d64e94fa4844a56970.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-87d64e94fa4844a56970.js js/hello_react-87d64e94fa4844a56970.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6521.9ms | Allocations: 7030)
+Completed 200 OK in 6524ms (Views: 6523.2ms | Allocations: 7405)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:50:16 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: f0337da3ea6244d65471
+Version: webpack 4.46.0
+Time: 5232ms
+Built at: 2021-11-25 15:50:23
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-08982b7d78a0772f9fa4.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-08982b7d78a0772f9fa4.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-08982b7d78a0772f9fa4.js js/hello_react-08982b7d78a0772f9fa4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6573.2ms | Allocations: 7032)
+Completed 200 OK in 6576ms (Views: 6575.0ms | Allocations: 7411)
+
+
+Started GET "/" for ::1 at 2021-11-25 15:57:37 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 0c7f1dd9e91b961903f3
+Version: webpack 4.46.0
+Time: 5289ms
+Built at: 2021-11-25 15:57:44
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-c1dbba54c7359ffd9498.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-c1dbba54c7359ffd9498.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-c1dbba54c7359ffd9498.js js/hello_react-c1dbba54c7359ffd9498.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6929.5ms | Allocations: 7031)
+Completed 200 OK in 6931ms (Views: 6930.8ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:00:19 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: b6f4007060678adb2ed3
+Version: webpack 4.46.0
+Time: 6252ms
+Built at: 2021-11-25 16:00:28
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-4bc1515b2430500d01c7.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-4bc1515b2430500d01c7.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-4bc1515b2430500d01c7.js js/hello_react-4bc1515b2430500d01c7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8800.8ms | Allocations: 7036)
+Completed 200 OK in 8802ms (Views: 8801.5ms | Allocations: 7411)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:04:09 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: b355daea0fa73aaaf9d1
+Version: webpack 4.46.0
+Time: 5364ms
+Built at: 2021-11-25 16:04:16
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-3409c47ac6fbf22bb9c1.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-3409c47ac6fbf22bb9c1.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-3409c47ac6fbf22bb9c1.js js/hello_react-3409c47ac6fbf22bb9c1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6724.0ms | Allocations: 7032)
+Completed 200 OK in 6726ms (Views: 6724.9ms | Allocations: 7411)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:04:42 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: cd6fe7b28687013edae0
+Version: webpack 4.46.0
+Time: 5324ms
+Built at: 2021-11-25 16:04:49
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-cca17c421cb897b0e5c3.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-cca17c421cb897b0e5c3.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-cca17c421cb897b0e5c3.js js/hello_react-cca17c421cb897b0e5c3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6695.0ms | Allocations: 7034)
+Completed 200 OK in 6697ms (Views: 6695.8ms | Allocations: 7409)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:06:29 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: b6f4007060678adb2ed3
+Version: webpack 4.46.0
+Time: 5064ms
+Built at: 2021-11-25 16:06:36
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-4bc1515b2430500d01c7.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-4bc1515b2430500d01c7.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-4bc1515b2430500d01c7.js js/hello_react-4bc1515b2430500d01c7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6450.3ms | Allocations: 7030)
+Completed 200 OK in 6452ms (Views: 6451.1ms | Allocations: 7405)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:12:42 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 19c6fc39a010e6251b8e
+Version: webpack 4.46.0
+Time: 5358ms
+Built at: 2021-11-25 16:12:49
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-a07f6ccb63781fc609f2.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-a07f6ccb63781fc609f2.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-a07f6ccb63781fc609f2.js js/hello_react-a07f6ccb63781fc609f2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6715.6ms | Allocations: 7031)
+Completed 200 OK in 6717ms (Views: 6716.4ms | Allocations: 7410)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:17:29 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: e47c7a88861d4aaec15f
+Version: webpack 4.46.0
+Time: 5389ms
+Built at: 2021-11-25 16:17:35
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-c35dd80c475d464df362.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-c35dd80c475d464df362.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-c35dd80c475d464df362.js js/hello_react-c35dd80c475d464df362.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6724.5ms | Allocations: 7031)
+Completed 200 OK in 6726ms (Views: 6725.3ms | Allocations: 7406)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:18:59 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: bd52dde4a4a1e1aee50b
+Version: webpack 4.46.0
+Time: 5068ms
+Built at: 2021-11-25 16:19:05
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-6527135754bf432ab900.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-6527135754bf432ab900.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-6527135754bf432ab900.js js/hello_react-6527135754bf432ab900.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+ERROR in ./app/javascript/components/views/viewComponents/Reservation.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/Martin/Desktop/testing-proyecto-b/app/javascript/components/views/viewComponents/Reservation.jsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (27:8)
+
+  25 |     return (
+  26 |         <Typography>Reserva de asiento</Typography>
+> 27 |         <Box sx={{ flexGrow: 1 }}> 
+     |         ^
+  28 |             {list.map((row, rowIndex) => 
+  29 |                 <List>
+  30 |                     <ListItem>
+    at Object._raise (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:541:17)
+    at Object.raiseWithData (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:534:17)
+    at Object.raise (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:495:17)
+    at Object.jsxParseElementAt (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7455:18)
+    at Object.jsxParseElement (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7465:17)
+    at Object.parseExprAtom (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7472:19)
+    at Object.parseExprSubscripts (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11584:23)
+    at Object.parseUpdate (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11564:21)
+    at Object.parseMaybeUnary (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11539:23)
+    at Object.parseMaybeUnaryOrPrivate (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11353:61)
+    at Object.parseExprOps (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11360:23)
+    at Object.parseMaybeConditional (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11330:23)
+    at Object.parseMaybeAssign (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11290:21)
+    at /Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11248:39
+    at Object.allowInAnd (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:13137:12)
+    at Object.parseMaybeAssignAllowIn (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11248:17)
+    at Object.parseParenAndDistinguishExpression (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:12294:28)
+    at Object.parseExprAtom (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11891:23)
+    at Object.parseExprAtom (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:7477:20)
+    at Object.parseExprSubscripts (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11584:23)
+    at Object.parseUpdate (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11564:21)
+    at Object.parseMaybeUnary (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11539:23)
+    at Object.parseMaybeUnaryOrPrivate (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11353:61)
+    at Object.parseExprOps (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11360:23)
+    at Object.parseMaybeConditional (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11330:23)
+    at Object.parseMaybeAssign (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11290:21)
+    at Object.parseExpressionBase (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11226:23)
+    at /Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11220:39
+    at Object.allowInAnd (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:13131:16)
+    at Object.parseExpression (/Users/Martin/Desktop/testing-proyecto-b/node_modules/@babel/parser/lib/index.js:11220:17)
+ @ ./app/javascript/components/views/Functions.jsx 16:0-55 34:62-73
+ @ ./app/javascript/components/NavbarTabPanel.jsx
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6392.5ms | Allocations: 6956)
+Completed 200 OK in 6394ms (Views: 6393.3ms | Allocations: 7331)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:19:40 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 8945bd1edf3d88a69b2e
+Version: webpack 4.46.0
+Time: 5173ms
+Built at: 2021-11-25 16:19:47
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-a94f181661f6b4eb6a92.js   4.72 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-a94f181661f6b4eb6a92.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-a94f181661f6b4eb6a92.js js/hello_react-a94f181661f6b4eb6a92.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 834 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6622.1ms | Allocations: 7031)
+Completed 200 OK in 6624ms (Views: 6622.9ms | Allocations: 7410)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:25:51 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: a864e553bb5336261ff5
+Version: webpack 4.46.0
+Time: 5308ms
+Built at: 2021-11-25 16:25:57
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-dbeaa1ba008610ef1424.js   4.73 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-dbeaa1ba008610ef1424.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-dbeaa1ba008610ef1424.js js/hello_react-dbeaa1ba008610ef1424.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 835 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6746.7ms | Allocations: 7067)
+Completed 200 OK in 6748ms (Views: 6747.5ms | Allocations: 7442)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:29:00 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 8ffe6ca259d3f2657ccb
+Version: webpack 4.46.0
+Time: 5306ms
+Built at: 2021-11-25 16:29:07
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-5b2f720975594fe2e3d6.js   4.73 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-5b2f720975594fe2e3d6.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-5b2f720975594fe2e3d6.js js/hello_react-5b2f720975594fe2e3d6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 835 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6696.6ms | Allocations: 7075)
+Completed 200 OK in 6699ms (Views: 6697.5ms | Allocations: 7450)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:40:10 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 85e4c24b5b192a74cddc
+Version: webpack 4.46.0
+Time: 5301ms
+Built at: 2021-11-25 16:40:17
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-d72b54c36481a88a5c5e.js   4.73 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-d72b54c36481a88a5c5e.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-d72b54c36481a88a5c5e.js js/hello_react-d72b54c36481a88a5c5e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 835 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6684.4ms | Allocations: 7067)
+Completed 200 OK in 6686ms (Views: 6685.1ms | Allocations: 7446)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:44:10 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: b337f529f7efd8a04044
+Version: webpack 4.46.0
+Time: 5455ms
+Built at: 2021-11-25 16:44:17
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-72ad30c231406246ea12.js   4.73 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-72ad30c231406246ea12.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-72ad30c231406246ea12.js js/hello_react-72ad30c231406246ea12.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 835 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6878.6ms | Allocations: 7066)
+Completed 200 OK in 6880ms (Views: 6879.3ms | Allocations: 7441)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:44:30 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 6bec90649f83dbcb5cbf
+Version: webpack 4.46.0
+Time: 5372ms
+Built at: 2021-11-25 16:44:37
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-6142fe58cffad1c8ec0e.js   4.73 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-6142fe58cffad1c8ec0e.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-6142fe58cffad1c8ec0e.js js/hello_react-6142fe58cffad1c8ec0e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 835 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6798.3ms | Allocations: 7067)
+Completed 200 OK in 6801ms (Views: 6799.5ms | Allocations: 7442)
+
+
+Started GET "/" for ::1 at 2021-11-25 16:46:01 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 25cf36a92a67a49e59b8
+Version: webpack 4.46.0
+Time: 5347ms
+Built at: 2021-11-25 16:46:08
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-635d8a29fbec6ac99532.js   4.73 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-635d8a29fbec6ac99532.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-635d8a29fbec6ac99532.js js/hello_react-635d8a29fbec6ac99532.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 835 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6637.7ms | Allocations: 7075)
+Completed 200 OK in 6639ms (Views: 6638.4ms | Allocations: 7454)
+
+
