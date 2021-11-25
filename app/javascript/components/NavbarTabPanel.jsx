@@ -45,14 +45,6 @@ const muiClassStyles = makeStyles((theme) => ({
 export default function BasicTabs() {
     const classes = muiClassStyles();
     const [value, setValue] = useState(0);
-    const [tabLabel, setTabLabel] = useState('En vivo')
-
-
-    useEffect(() => {
-        const labels = ['FUNCIONES', 'CREAR PELÍCULA', 'RESERVAR ASIENTO']
-        setTabLabel(labels[value])
-    }, [value])
-
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -70,19 +62,19 @@ export default function BasicTabs() {
                             }
                         }}>
                         <Tab label={<b className={value === 0 ? classes.selected : classes.nonSelected}>Funciones</b>} />
-                        <Tab label={<b className={value === 1 ? classes.selected : classes.nonSelected}>Crear Pelicula</b>} />
-                        <Tab label={<b className={value === 2 ? classes.selected : classes.nonSelected}>Reservar asiento</b>} />
-                        <Tab disabled label={<b style={{ textTransform: 'none', color: 'white', fontSize: 20 }}>{tabLabel}</b>} />
+                        <Tab label={<b className={value === 1 ? classes.selected : classes.nonSelected}>Películas</b>} />
+                        <Tab label={<b className={value === 2 ? classes.selected : classes.nonSelected}>Crear Película</b>} />
+                        
                     </Tabs>
                 </Box>
                     <NavbarTabPanel value={value} index={0}>
                         Funciones
                     </NavbarTabPanel>
                     <NavbarTabPanel value={value} index={1}>
-                        Crear pelicula
+                        Películas
                     </NavbarTabPanel>
                     <NavbarTabPanel value={value} index={2}>
-                        Reservar asiento
+                        Crear Película
                     </NavbarTabPanel>
                 </Box>
         </div>
