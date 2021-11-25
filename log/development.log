@@ -1,2 +1,1761 @@
   [1m[35m (424.0ms)[0m  [1m[35mCREATE DATABASE "proyecto_b_development" ENCODING = 'unicode'[0m
   [1m[35m (163.9ms)[0m  [1m[35mCREATE DATABASE "proyecto_b_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-11-25 12:14:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 388)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 22b832562f919d0fcd27
+Version: webpack 4.46.0
+Time: 4206ms
+Built at: 2021-11-25 12:14:48
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-be412d64645010827f4e.js    125 KiB  application  [emitted] [immutable]  application
+js/application-be412d64645010827f4e.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-03a7ee0ba98c0c235140.js   1.09 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-03a7ee0ba98c0c235140.js.map   1.26 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-be412d64645010827f4e.js js/application-be412d64645010827f4e.js.map
+Entrypoint hello_react = js/hello_react-03a7ee0ba98c0c235140.js js/hello_react-03a7ee0ba98c0c235140.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7345.1ms | Allocations: 16484)
+Completed 200 OK in 7381ms (Views: 7356.3ms | ActiveRecord: 0.0ms | Allocations: 20689)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:20:29 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 108)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 73f98da899ee36d080c8
+Version: webpack 4.46.0
+Time: 1093ms
+Built at: 2021-11-25 12:20:31
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-be412d64645010827f4e.js    125 KiB  application  [emitted] [immutable]  application
+js/application-be412d64645010827f4e.js.map    139 KiB  application  [emitted] [dev]        application
+          js/index-a862ea2ca0546606c9be.js   1.06 MiB        index  [emitted] [immutable]  index
+      js/index-a862ea2ca0546606c9be.js.map   1.22 MiB        index  [emitted] [dev]        index
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-be412d64645010827f4e.js js/application-be412d64645010827f4e.js.map
+Entrypoint index = js/index-a862ea2ca0546606c9be.js js/index-a862ea2ca0546606c9be.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/index.jsx] 512 bytes {index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 13 hidden modules
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: Can't resolve './layout/Layout' in '/Users/Martin/Desktop/testing-proyecto-b/app/javascript/components'
+ @ ./app/javascript/components/App.js 5:0-37
+ @ ./app/javascript/packs/index.jsx
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: Can't resolve './styles/theme' in '/Users/Martin/Desktop/testing-proyecto-b/app/javascript/components'
+ @ ./app/javascript/components/App.js 8:0-43
+ @ ./app/javascript/packs/index.jsx
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: Can't resolve '@mui/material' in '/Users/Martin/Desktop/testing-proyecto-b/app/javascript/components'
+ @ ./app/javascript/components/App.js 6:0-46 21:42-55
+ @ ./app/javascript/packs/index.jsx
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: Can't resolve '@mui/styles' in '/Users/Martin/Desktop/testing-proyecto-b/app/javascript/components'
+ @ ./app/javascript/components/App.js 7:0-41 9:16-26
+ @ ./app/javascript/packs/index.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2564.6ms | Allocations: 7075)
+Completed 200 OK in 2571ms (Views: 2569.4ms | ActiveRecord: 0.0ms | Allocations: 8199)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:26:50 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1265.9ms | Allocations: 6834)
+Completed 200 OK in 1268ms (Views: 1266.9ms | Allocations: 7213)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:28:08 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 223)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1064.6ms | Allocations: 10397)
+Completed 500 Internal Server Error in 1109ms (ActiveRecord: 0.0ms | Allocations: 13106)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /Users/Martin/Desktop/testing-proyecto-b/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-be412d64645010827f4e.js",
+  "application.js.map": "/packs/js/application-be412d64645010827f4e.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-be412d64645010827f4e.js"
+      ],
+      "js.map": [
+        "/packs/js/application-be412d64645010827f4e.js.map"
+      ]
+    },
+    "index": {
+      "js": [
+        "/packs/js/index-a862ea2ca0546606c9be.js"
+      ],
+      "js.map": [
+        "/packs/js/index-a862ea2ca0546606c9be.js.map"
+      ]
+    }
+  },
+  "index.js": "/packs/js/index-a862ea2ca0546606c9be.js",
+  "index.js.map": "/packs/js/index-a862ea2ca0546606c9be.js.map"
+}
+):
+     7:     <%= csp_meta_tag %>
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'hello_react' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2021-11-25 12:30:21 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3494)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 4692)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /Users/Martin/Desktop/testing-proyecto-b/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-be412d64645010827f4e.js",
+  "application.js.map": "/packs/js/application-be412d64645010827f4e.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-be412d64645010827f4e.js"
+      ],
+      "js.map": [
+        "/packs/js/application-be412d64645010827f4e.js.map"
+      ]
+    },
+    "index": {
+      "js": [
+        "/packs/js/index-a862ea2ca0546606c9be.js"
+      ],
+      "js.map": [
+        "/packs/js/index-a862ea2ca0546606c9be.js.map"
+      ]
+    }
+  },
+  "index.js": "/packs/js/index-a862ea2ca0546606c9be.js",
+  "index.js.map": "/packs/js/index-a862ea2ca0546606c9be.js.map"
+}
+):
+     5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= javascript_pack_tag 'hello_react' %>
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/" for ::1 at 2021-11-25 12:30:23 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3193)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3556)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /Users/Martin/Desktop/testing-proyecto-b/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-be412d64645010827f4e.js",
+  "application.js.map": "/packs/js/application-be412d64645010827f4e.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-be412d64645010827f4e.js"
+      ],
+      "js.map": [
+        "/packs/js/application-be412d64645010827f4e.js.map"
+      ]
+    },
+    "index": {
+      "js": [
+        "/packs/js/index-a862ea2ca0546606c9be.js"
+      ],
+      "js.map": [
+        "/packs/js/index-a862ea2ca0546606c9be.js.map"
+      ]
+    }
+  },
+  "index.js": "/packs/js/index-a862ea2ca0546606c9be.js",
+  "index.js.map": "/packs/js/index-a862ea2ca0546606c9be.js.map"
+}
+):
+     5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= javascript_pack_tag 'hello_react' %>
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/" for ::1 at 2021-11-25 12:30:37 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3907)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 6615)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /Users/Martin/Desktop/testing-proyecto-b/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-be412d64645010827f4e.js",
+  "application.js.map": "/packs/js/application-be412d64645010827f4e.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-be412d64645010827f4e.js"
+      ],
+      "js.map": [
+        "/packs/js/application-be412d64645010827f4e.js.map"
+      ]
+    },
+    "index": {
+      "js": [
+        "/packs/js/index-a862ea2ca0546606c9be.js"
+      ],
+      "js.map": [
+        "/packs/js/index-a862ea2ca0546606c9be.js.map"
+      ]
+    }
+  },
+  "index.js": "/packs/js/index-a862ea2ca0546606c9be.js",
+  "index.js.map": "/packs/js/index-a862ea2ca0546606c9be.js.map"
+}
+):
+     5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <%= javascript_pack_tag 'hello_react' %>
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/" for ::1 at 2021-11-25 12:32:32 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 103)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1054.9ms | Allocations: 9566)
+Completed 500 Internal Server Error in 1059ms (ActiveRecord: 0.0ms | Allocations: 10764)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /Users/Martin/Desktop/testing-proyecto-b/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-be412d64645010827f4e.js",
+  "application.js.map": "/packs/js/application-be412d64645010827f4e.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-be412d64645010827f4e.js"
+      ],
+      "js.map": [
+        "/packs/js/application-be412d64645010827f4e.js.map"
+      ]
+    },
+    "index": {
+      "js": [
+        "/packs/js/index-a862ea2ca0546606c9be.js"
+      ],
+      "js.map": [
+        "/packs/js/index-a862ea2ca0546606c9be.js.map"
+      ]
+    }
+  },
+  "index.js": "/packs/js/index-a862ea2ca0546606c9be.js",
+  "index.js.map": "/packs/js/index-a862ea2ca0546606c9be.js.map"
+}
+):
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_pack_tag 'hello_react' %>
+    12:   </head>
+    13: 
+    14:   <body>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2021-11-25 12:37:04 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 935.4ms | Allocations: 7666)
+Completed 500 Internal Server Error in 937ms (Allocations: 8029)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /Users/Martin/Desktop/testing-proyecto-b/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-be412d64645010827f4e.js",
+  "application.js.map": "/packs/js/application-be412d64645010827f4e.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-be412d64645010827f4e.js"
+      ],
+      "js.map": [
+        "/packs/js/application-be412d64645010827f4e.js.map"
+      ]
+    },
+    "index": {
+      "js": [
+        "/packs/js/index-a862ea2ca0546606c9be.js"
+      ],
+      "js.map": [
+        "/packs/js/index-a862ea2ca0546606c9be.js.map"
+      ]
+    }
+  },
+  "index.js": "/packs/js/index-a862ea2ca0546606c9be.js",
+  "index.js.map": "/packs/js/index-a862ea2ca0546606c9be.js.map"
+}
+):
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_pack_tag 'hello_react' %>
+    12:   </head>
+    13: 
+    14:   <body>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2021-11-25 12:37:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 5903)
+Completed 200 OK in 16ms (Views: 14.7ms | Allocations: 7032)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:37:36 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 5631)
+Completed 200 OK in 17ms (Views: 15.7ms | Allocations: 6014)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:38:00 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 892.9ms | Allocations: 6829)
+Completed 200 OK in 895ms (Views: 894.3ms | Allocations: 7204)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:38:09 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 5630)
+Completed 200 OK in 18ms (Views: 16.5ms | Allocations: 6008)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:38:58 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 7587)
+Completed 200 OK in 33ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 10319)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:40:15 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 867.9ms | Allocations: 6898)
+Completed 200 OK in 870ms (Views: 868.6ms | ActiveRecord: 0.0ms | Allocations: 7277)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:40:19 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 5652)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 6027)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:40:52 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 5652)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 6031)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:41:11 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 848.0ms | Allocations: 6904)
+Completed 200 OK in 850ms (Views: 848.9ms | ActiveRecord: 0.0ms | Allocations: 7279)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:41:39 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 7587)
+Completed 200 OK in 36ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 10319)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:43:19 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5630)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 6008)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:45:38 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.8ms | Allocations: 7588)
+Completed 200 OK in 61ms (Views: 46.0ms | ActiveRecord: 0.0ms | Allocations: 10320)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:45:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 5634)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms | Allocations: 6017)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:46:03 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1003.3ms | Allocations: 6862)
+Completed 200 OK in 1006ms (Views: 1004.0ms | ActiveRecord: 0.0ms | Allocations: 7240)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:47:15 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 976.6ms | Allocations: 6833)
+Completed 200 OK in 978ms (Views: 977.5ms | ActiveRecord: 0.0ms | Allocations: 7214)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:47:43 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 7588)
+Completed 200 OK in 58ms (Views: 41.2ms | ActiveRecord: 0.0ms | Allocations: 10320)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:49:36 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 858.1ms | Allocations: 6862)
+Completed 200 OK in 860ms (Views: 858.8ms | ActiveRecord: 0.0ms | Allocations: 7245)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:52:22 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 7602)
+Completed 200 OK in 41ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 10273)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:53:45 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 922.0ms | Allocations: 6862)
+Completed 200 OK in 924ms (Views: 922.5ms | ActiveRecord: 0.0ms | Allocations: 7249)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:54:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 843.7ms | Allocations: 6793)
+Completed 200 OK in 846ms (Views: 844.6ms | ActiveRecord: 0.0ms | Allocations: 7170)
+
+
+Started GET "/" for ::1 at 2021-11-25 12:56:22 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 223)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 1543ms
+Built at: 2021-11-25 12:56:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3241.8ms | Allocations: 9939)
+Completed 500 Internal Server Error in 3285ms (ActiveRecord: 0.0ms | Allocations: 12647)
+
+
+  
+ActionView::Template::Error (Webpacker can't find index.js in /Users/Martin/Desktop/testing-proyecto-b/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-e421b4aa3f716bebdab1.js",
+  "application.js.map": "/packs/js/application-e421b4aa3f716bebdab1.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-e421b4aa3f716bebdab1.js"
+      ],
+      "js.map": [
+        "/packs/js/application-e421b4aa3f716bebdab1.js.map"
+      ]
+    }
+  }
+}
+):
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_pack_tag 'index' %>
+    12:   </head>
+    13: 
+    14:   <body>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2021-11-25 12:58:07 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3202)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3273)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 4471)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /Users/Martin/Desktop/testing-proyecto-b/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-e421b4aa3f716bebdab1.js",
+  "application.js.map": "/packs/js/application-e421b4aa3f716bebdab1.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-e421b4aa3f716bebdab1.js"
+      ],
+      "js.map": [
+        "/packs/js/application-e421b4aa3f716bebdab1.js.map"
+      ]
+    }
+  }
+}
+):
+    1:   <%= javascript_pack_tag 'hello_react' %>
+  
+app/views/pages/index.html.erb:1
+Started GET "/" for ::1 at 2021-11-25 12:58:09 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3099)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3170)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3533)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /Users/Martin/Desktop/testing-proyecto-b/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-e421b4aa3f716bebdab1.js",
+  "application.js.map": "/packs/js/application-e421b4aa3f716bebdab1.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-e421b4aa3f716bebdab1.js"
+      ],
+      "js.map": [
+        "/packs/js/application-e421b4aa3f716bebdab1.js.map"
+      ]
+    }
+  }
+}
+):
+    1:   <%= javascript_pack_tag 'hello_react' %>
+  
+app/views/pages/index.html.erb:1
+Started GET "/" for ::1 at 2021-11-25 12:59:19 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 6777)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 7881)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /Users/Martin/Desktop/testing-proyecto-b/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-e421b4aa3f716bebdab1.js",
+  "application.js.map": "/packs/js/application-e421b4aa3f716bebdab1.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-e421b4aa3f716bebdab1.js"
+      ],
+      "js.map": [
+        "/packs/js/application-e421b4aa3f716bebdab1.js.map"
+      ]
+    }
+  }
+}
+):
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_pack_tag 'hello_react' %>
+    12:   </head>
+    13: 
+    14:   <body>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2021-11-25 12:59:21 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 6379)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 6739)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /Users/Martin/Desktop/testing-proyecto-b/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-e421b4aa3f716bebdab1.js",
+  "application.js.map": "/packs/js/application-e421b4aa3f716bebdab1.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-e421b4aa3f716bebdab1.js"
+      ],
+      "js.map": [
+        "/packs/js/application-e421b4aa3f716bebdab1.js.map"
+      ]
+    }
+  }
+}
+):
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_pack_tag 'hello_react' %>
+    12:   </head>
+    13: 
+    14:   <body>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2021-11-25 13:03:55 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 223)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: a7e2d53e9908f154a276
+Version: webpack 4.46.0
+Time: 3775ms
+Built at: 2021-11-25 13:04:01
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-8135494bde930980f6d2.js   1.09 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-8135494bde930980f6d2.js.map   1.26 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-8135494bde930980f6d2.js js/hello_react-8135494bde930980f6d2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5772.5ms | Allocations: 8913)
+Completed 200 OK in 5791ms (Views: 5777.1ms | ActiveRecord: 0.0ms | Allocations: 11645)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:04:49 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: f23c25c019510a8add1e
+Version: webpack 4.46.0
+Time: 14487ms
+Built at: 2021-11-25 13:05:05
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-bbe3cd8c9012dca26709.js   4.93 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-bbe3cd8c9012dca26709.js.map   4.07 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-bbe3cd8c9012dca26709.js js/hello_react-bbe3cd8c9012dca26709.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 867 hidden modules
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: Can't resolve './styles/theme' in '/Users/Martin/Desktop/testing-proyecto-b/app/javascript/components'
+ @ ./app/javascript/components/App.js 7:0-43
+ @ ./app/javascript/packs/hello_react.jsx
+
+ERROR in ./node_modules/@mui/styled-engine/index.js
+Module not found: Error: Can't resolve '@emotion/react' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine'
+ @ ./node_modules/@mui/styled-engine/index.js 32:0-62 32:0-62 32:0-62 32:0-62
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/Box/Box.js
+ @ ./node_modules/@mui/material/Box/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+ERROR in ./node_modules/@mui/styled-engine/GlobalStyles/GlobalStyles.js
+Module not found: Error: Can't resolve '@emotion/react' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine/GlobalStyles'
+ @ ./node_modules/@mui/styled-engine/GlobalStyles/GlobalStyles.js 3:0-40 17:27-33
+ @ ./node_modules/@mui/styled-engine/GlobalStyles/index.js
+ @ ./node_modules/@mui/styled-engine/index.js
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/Box/Box.js
+ @ ./node_modules/@mui/material/Box/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+ERROR in ./node_modules/@mui/styled-engine/StyledEngineProvider/StyledEngineProvider.js
+Module not found: Error: Can't resolve '@emotion/react' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine/StyledEngineProvider'
+ @ ./node_modules/@mui/styled-engine/StyledEngineProvider/StyledEngineProvider.js 3:0-47 14:41-54
+ @ ./node_modules/@mui/styled-engine/StyledEngineProvider/index.js
+ @ ./node_modules/@mui/styled-engine/index.js
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/Box/Box.js
+ @ ./node_modules/@mui/material/Box/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+ERROR in ./node_modules/@mui/styled-engine/index.js
+Module not found: Error: Can't resolve '@emotion/styled' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine'
+ @ ./node_modules/@mui/styled-engine/index.js 6:0-39 8:22-30
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/Box/Box.js
+ @ ./node_modules/@mui/material/Box/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: [CaseSensitivePathsPlugin] `/Users/Martin/Desktop/testing-proyecto-b/app/javascript/components/NavBarTabPanel.jsx` does not match the corresponding path on disk `NavbarTabPanel.jsx`.
+ @ ./app/javascript/components/App.js 8:0-46 37:38-52
+ @ ./app/javascript/packs/hello_react.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16046.2ms | Allocations: 6874)
+Completed 200 OK in 16048ms (Views: 16047.0ms | ActiveRecord: 0.0ms | Allocations: 7253)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:06:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: f23c25c019510a8add1e
+Version: webpack 4.46.0
+Time: 6086ms
+Built at: 2021-11-25 13:06:12
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-bbe3cd8c9012dca26709.js   4.93 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-bbe3cd8c9012dca26709.js.map   4.07 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-bbe3cd8c9012dca26709.js js/hello_react-bbe3cd8c9012dca26709.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 867 hidden modules
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: Can't resolve './styles/theme' in '/Users/Martin/Desktop/testing-proyecto-b/app/javascript/components'
+ @ ./app/javascript/components/App.js 7:0-43
+ @ ./app/javascript/packs/hello_react.jsx
+
+ERROR in ./node_modules/@mui/styled-engine/index.js
+Module not found: Error: Can't resolve '@emotion/react' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine'
+ @ ./node_modules/@mui/styled-engine/index.js 32:0-62 32:0-62 32:0-62 32:0-62
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/styles/styled.js
+ @ ./node_modules/@mui/material/ListItemText/ListItemText.js
+ @ ./node_modules/@mui/material/ListItemText/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+ERROR in ./node_modules/@mui/styled-engine/GlobalStyles/GlobalStyles.js
+Module not found: Error: Can't resolve '@emotion/react' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine/GlobalStyles'
+ @ ./node_modules/@mui/styled-engine/GlobalStyles/GlobalStyles.js 3:0-40 17:27-33
+ @ ./node_modules/@mui/styled-engine/GlobalStyles/index.js
+ @ ./node_modules/@mui/styled-engine/index.js
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/styles/styled.js
+ @ ./node_modules/@mui/material/ListItemText/ListItemText.js
+ @ ./node_modules/@mui/material/ListItemText/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+ERROR in ./node_modules/@mui/styled-engine/StyledEngineProvider/StyledEngineProvider.js
+Module not found: Error: Can't resolve '@emotion/react' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine/StyledEngineProvider'
+ @ ./node_modules/@mui/styled-engine/StyledEngineProvider/StyledEngineProvider.js 3:0-47 14:41-54
+ @ ./node_modules/@mui/styled-engine/StyledEngineProvider/index.js
+ @ ./node_modules/@mui/styled-engine/index.js
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/styles/styled.js
+ @ ./node_modules/@mui/material/ListItemText/ListItemText.js
+ @ ./node_modules/@mui/material/ListItemText/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+ERROR in ./node_modules/@mui/styled-engine/index.js
+Module not found: Error: Can't resolve '@emotion/styled' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine'
+ @ ./node_modules/@mui/styled-engine/index.js 6:0-39 8:22-30
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/styles/styled.js
+ @ ./node_modules/@mui/material/ListItemText/ListItemText.js
+ @ ./node_modules/@mui/material/ListItemText/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: [CaseSensitivePathsPlugin] `/Users/Martin/Desktop/testing-proyecto-b/app/javascript/components/NavBarTabPanel.jsx` does not match the corresponding path on disk `NavbarTabPanel.jsx`.
+ @ ./app/javascript/components/App.js 8:0-46 37:38-52
+ @ ./app/javascript/packs/hello_react.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7863.3ms | Allocations: 6848)
+Completed 200 OK in 7865ms (Views: 7864.0ms | ActiveRecord: 0.0ms | Allocations: 7225)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:07:25 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 30a3fe24c37759719a8f
+Version: webpack 4.46.0
+Time: 6566ms
+Built at: 2021-11-25 13:07:33
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-6144fd70c5a3ef779ff9.js   4.98 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-6144fd70c5a3ef779ff9.js.map   4.12 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-6144fd70c5a3ef779ff9.js js/hello_react-6144fd70c5a3ef779ff9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 875 hidden modules
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: Can't resolve './styles/theme' in '/Users/Martin/Desktop/testing-proyecto-b/app/javascript/components'
+ @ ./app/javascript/components/App.js 7:0-43
+ @ ./app/javascript/packs/hello_react.jsx
+
+ERROR in ./node_modules/@mui/styled-engine/index.js
+Module not found: Error: Can't resolve '@emotion/styled' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine'
+ @ ./node_modules/@mui/styled-engine/index.js 6:0-39 8:22-30
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/GlobalStyles/GlobalStyles.js
+ @ ./node_modules/@mui/material/GlobalStyles/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: [CaseSensitivePathsPlugin] `/Users/Martin/Desktop/testing-proyecto-b/app/javascript/components/NavBarTabPanel.jsx` does not match the corresponding path on disk `NavbarTabPanel.jsx`.
+ @ ./app/javascript/components/App.js 8:0-46 37:38-52
+ @ ./app/javascript/packs/hello_react.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8079.1ms | Allocations: 6847)
+Completed 200 OK in 8081ms (Views: 8079.8ms | ActiveRecord: 0.0ms | Allocations: 7222)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:09:13 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 08c38eb8bd119722f0f8
+Version: webpack 4.46.0
+Time: 6365ms
+Built at: 2021-11-25 13:09:21
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-17e406147641a3c1f3ac.js   4.99 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-17e406147641a3c1f3ac.js.map   4.12 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-17e406147641a3c1f3ac.js js/hello_react-17e406147641a3c1f3ac.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 876 hidden modules
+
+ERROR in ./node_modules/@mui/styled-engine/index.js
+Module not found: Error: Can't resolve '@emotion/styled' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine'
+ @ ./node_modules/@mui/styled-engine/index.js 6:0-39 8:22-30
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/styles/useThemeProps.js
+ @ ./node_modules/@mui/material/ListItemButton/ListItemButton.js
+ @ ./node_modules/@mui/material/ListItemButton/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7883.9ms | Allocations: 6846)
+Completed 200 OK in 7886ms (Views: 7884.7ms | ActiveRecord: 0.0ms | Allocations: 7226)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:09:31 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 7263cb0b7de75ee6c543
+Version: webpack 4.46.0
+Time: 6232ms
+Built at: 2021-11-25 13:09:39
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-41ea01f8851ef684a4a6.js   4.99 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-41ea01f8851ef684a4a6.js.map   4.12 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-41ea01f8851ef684a4a6.js js/hello_react-41ea01f8851ef684a4a6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 876 hidden modules
+
+ERROR in ./node_modules/@mui/styled-engine/index.js
+Module not found: Error: Can't resolve '@emotion/styled' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine'
+ @ ./node_modules/@mui/styled-engine/index.js 6:0-39 8:22-30
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/GlobalStyles/GlobalStyles.js
+ @ ./node_modules/@mui/material/GlobalStyles/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7822.2ms | Allocations: 6848)
+Completed 200 OK in 7825ms (Views: 7823.4ms | ActiveRecord: 0.0ms | Allocations: 7225)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:10:37 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 7ad8f905be85cd35457a
+Version: webpack 4.46.0
+Time: 5425ms
+Built at: 2021-11-25 13:10:44
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-1b2406574f1f91b83b17.js    4.7 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-1b2406574f1f91b83b17.js.map    3.8 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-1b2406574f1f91b83b17.js js/hello_react-1b2406574f1f91b83b17.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 828 hidden modules
+
+ERROR in ./node_modules/@mui/styled-engine/index.js
+Module not found: Error: Can't resolve '@emotion/styled' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine'
+ @ ./node_modules/@mui/styled-engine/index.js 6:0-39 8:22-30
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/GlobalStyles/GlobalStyles.js
+ @ ./node_modules/@mui/material/GlobalStyles/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7142.9ms | Allocations: 6847)
+Completed 200 OK in 7144ms (Views: 7143.5ms | Allocations: 7227)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:11:00 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 7587)
+Completed 200 OK in 43ms (Views: 31.3ms | ActiveRecord: 0.0ms | Allocations: 10319)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:11:21 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 5630)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 6009)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:11:23 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 5631)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 6013)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:11:28 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 5628)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 6003)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:12:12 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 941b8701adb6a2cbf9c8
+Version: webpack 4.46.0
+Time: 5695ms
+Built at: 2021-11-25 13:12:19
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-cc203295b334cb0fd76f.js    4.7 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-cc203295b334cb0fd76f.js.map    3.8 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-cc203295b334cb0fd76f.js js/hello_react-cc203295b334cb0fd76f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 828 hidden modules
+
+ERROR in ./node_modules/@mui/styled-engine/index.js
+Module not found: Error: Can't resolve '@emotion/styled' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine'
+ @ ./node_modules/@mui/styled-engine/index.js 6:0-39 8:22-30
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/PaginationItem/PaginationItem.js
+ @ ./node_modules/@mui/material/PaginationItem/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7087.9ms | Allocations: 6876)
+Completed 200 OK in 7089ms (Views: 7088.6ms | ActiveRecord: 0.0ms | Allocations: 7253)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:14:01 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 7587)
+Completed 200 OK in 33ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 10319)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:14:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 5630)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 6009)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:14:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 5644)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 5968)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:16:39 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: ee5e55fdd376e29baff3
+Version: webpack 4.46.0
+Time: 6463ms
+Built at: 2021-11-25 13:16:47
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-72c1c7e5682d813f0898.js   4.99 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-72c1c7e5682d813f0898.js.map   4.12 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-72c1c7e5682d813f0898.js js/hello_react-72c1c7e5682d813f0898.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.09 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 876 hidden modules
+
+ERROR in ./node_modules/@mui/styled-engine/index.js
+Module not found: Error: Can't resolve '@emotion/styled' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine'
+ @ ./node_modules/@mui/styled-engine/index.js 6:0-39 8:22-30
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/GlobalStyles/GlobalStyles.js
+ @ ./node_modules/@mui/material/GlobalStyles/index.js
+ @ ./node_modules/@mui/material/index.js
+ @ ./app/javascript/components/NavbarTabPanel.jsx
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8718.8ms | Allocations: 6881)
+Completed 200 OK in 8721ms (Views: 8719.8ms | ActiveRecord: 0.0ms | Allocations: 7262)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:17:24 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 316e1f3271984676d0f4
+Version: webpack 4.46.0
+Time: 1173ms
+Built at: 2021-11-25 13:17:26
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-d160e2c532e9c46a5b13.js   1.09 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-d160e2c532e9c46a5b13.js.map   1.26 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-d160e2c532e9c46a5b13.js js/hello_react-d160e2c532e9c46a5b13.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 19 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2630.1ms | Allocations: 6913)
+Completed 200 OK in 2632ms (Views: 2630.8ms | ActiveRecord: 0.0ms | Allocations: 7288)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:17:50 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: a7f9db6eb1b7d091645d
+Version: webpack 4.46.0
+Time: 6446ms
+Built at: 2021-11-25 13:17:58
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-933b96e8fc7e97c776a6.js   4.99 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-933b96e8fc7e97c776a6.js.map   4.12 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-933b96e8fc7e97c776a6.js js/hello_react-933b96e8fc7e97c776a6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 876 hidden modules
+
+ERROR in ./node_modules/@mui/styled-engine/index.js
+Module not found: Error: Can't resolve '@emotion/styled' in '/Users/Martin/Desktop/testing-proyecto-b/node_modules/@mui/styled-engine'
+ @ ./node_modules/@mui/styled-engine/index.js 6:0-39 8:22-30
+ @ ./node_modules/@mui/system/esm/index.js
+ @ ./node_modules/@mui/material/Box/Box.js
+ @ ./node_modules/@mui/material/Box/index.js
+ @ ./app/javascript/components/NavbarTabPanel.jsx
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/packs/hello_react.jsx
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8147.1ms | Allocations: 6848)
+Completed 200 OK in 8149ms (Views: 8148.0ms | ActiveRecord: 0.0ms | Allocations: 7223)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:19:48 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 5631)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 6013)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:22:12 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 5eddec7e931aa3300c26
+Version: webpack 4.46.0
+Time: 6355ms
+Built at: 2021-11-25 13:22:19
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-98533cbcc6012263fbca.js   5.01 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-98533cbcc6012263fbca.js.map   4.13 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-98533cbcc6012263fbca.js js/hello_react-98533cbcc6012263fbca.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 879 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7832.4ms | Allocations: 6927)
+Completed 200 OK in 7834ms (Views: 7833.0ms | Allocations: 7302)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:22:54 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 7d6e977591c3f0b80889
+Version: webpack 4.46.0
+Time: 3601ms
+Built at: 2021-11-25 13:22:59
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-a85f6daed94a3416f71f.js   2.88 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-a85f6daed94a3416f71f.js.map   2.71 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-a85f6daed94a3416f71f.js js/hello_react-a85f6daed94a3416f71f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 460 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5091.9ms | Allocations: 6918)
+Completed 200 OK in 5094ms (Views: 5092.9ms | Allocations: 7293)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:23:35 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: f616fd8270600cfa3194
+Version: webpack 4.46.0
+Time: 6217ms
+Built at: 2021-11-25 13:23:43
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-53296984f405b42346c7.js   5.01 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-53296984f405b42346c7.js.map   4.13 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-53296984f405b42346c7.js js/hello_react-53296984f405b42346c7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 879 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7768.0ms | Allocations: 6928)
+Completed 200 OK in 7769ms (Views: 7768.7ms | Allocations: 7308)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:27:21 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: ffd1d4a09e127b9832dd
+Version: webpack 4.46.0
+Time: 6465ms
+Built at: 2021-11-25 13:27:29
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-ee47272e18687d9e7f12.js   5.01 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-ee47272e18687d9e7f12.js.map   4.13 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-ee47272e18687d9e7f12.js js/hello_react-ee47272e18687d9e7f12.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 879 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8123.5ms | Allocations: 6927)
+Completed 200 OK in 8125ms (Views: 8124.4ms | Allocations: 7302)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:28:15 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 4cac97efa2d2821a2eb9
+Version: webpack 4.46.0
+Time: 6698ms
+Built at: 2021-11-25 13:28:23
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-f01cbcb7bf9309900878.js   5.01 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-f01cbcb7bf9309900878.js.map   4.13 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-f01cbcb7bf9309900878.js js/hello_react-f01cbcb7bf9309900878.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 879 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8362.7ms | Allocations: 6927)
+Completed 200 OK in 8365ms (Views: 8363.6ms | Allocations: 7302)
+
+
+Started GET "/" for ::1 at 2021-11-25 13:29:00 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 83a0afa693bae1f5af19
+Version: webpack 4.46.0
+Time: 6079ms
+Built at: 2021-11-25 13:29:07
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-6505a4011ad98d055190.js   5.01 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-6505a4011ad98d055190.js.map   4.13 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-6505a4011ad98d055190.js js/hello_react-6505a4011ad98d055190.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 879 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7532.2ms | Allocations: 6932)
+Completed 200 OK in 7534ms (Views: 7533.4ms | Allocations: 7309)
+
+
