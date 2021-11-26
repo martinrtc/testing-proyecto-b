@@ -4576,3 +4576,1592 @@ Migrating to AddNameToTheaters (20211126161752)
   [1m[36mTheater Create (0.2ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 16:22:47.565897"], ["updated_at", "2021-11-26 16:22:47.565897"], ["name", "Sala 8"]]
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mTheater Load (0.4ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" ORDER BY "theaters"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2021-11-26 16:42:34 -0300
+  
+ActiveRecord::NoDatabaseError (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "proyecto_b_development" does not exist
+):
+  
+activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.4.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.4.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.4.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.4.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.4.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (42.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (49.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6552369198988958730)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20211125190517)
+  [1m[36mTRANSACTION (23.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211125190517"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMovies (20211125190852)
+  [1m[36mTRANSACTION (40.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "movies" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211125190852"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTheaters (20211125191058)
+  [1m[36mTRANSACTION (26.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "theaters" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211125191058"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSchedules (20211125191402)
+  [1m[36mTRANSACTION (39.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.4ms)[0m  [1m[35mCREATE TABLE "schedules" ("id" bigserial primary key, "hour" character varying, "movie_id" bigint NOT NULL, "theater_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_0a59223267"
+FOREIGN KEY ("movie_id")
+  REFERENCES "movies" ("id")
+, CONSTRAINT "fk_rails_d7f7094559"
+FOREIGN KEY ("theater_id")
+  REFERENCES "theaters" ("id")
+)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE INDEX "index_schedules_on_movie_id" ON "schedules" ("movie_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_schedules_on_theater_id" ON "schedules" ("theater_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211125191402"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateReservations (20211125191524)
+  [1m[36mTRANSACTION (24.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "reservations" ("id" bigserial primary key, "date" timestamp, "row" integer, "seats" integer[], "user_id" bigint NOT NULL, "schedule_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_48a92fce51"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_c58adc1819"
+FOREIGN KEY ("schedule_id")
+  REFERENCES "schedules" ("id")
+)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE INDEX "index_reservations_on_user_id" ON "reservations" ("user_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE INDEX "index_reservations_on_schedule_id" ON "reservations" ("schedule_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211125191524"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddNameToTheaters (20211126161752)
+  [1m[36mTRANSACTION (39.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.9ms)[0m  [1m[35mALTER TABLE "theaters" ADD "name" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211126161752"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (19.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-11-26 19:45:44.374557"], ["updated_at", "2021-11-26 19:45:44.374557"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(6552369198988958730)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (1.7ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 19:45:59.613383"], ["updated_at", "2021-11-26 19:45:59.613383"], ["name", "Sala 1"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.5ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 19:45:59.620828"], ["updated_at", "2021-11-26 19:45:59.620828"], ["name", "Sala 2"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.5ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 19:45:59.626165"], ["updated_at", "2021-11-26 19:45:59.626165"], ["name", "Sala 3"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.7ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 19:45:59.631368"], ["updated_at", "2021-11-26 19:45:59.631368"], ["name", "Sala 4"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.5ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 19:45:59.636309"], ["updated_at", "2021-11-26 19:45:59.636309"], ["name", "Sala 5"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.5ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 19:45:59.641269"], ["updated_at", "2021-11-26 19:45:59.641269"], ["name", "Sala 6"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.4ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 19:45:59.645666"], ["updated_at", "2021-11-26 19:45:59.645666"], ["name", "Sala 7"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.4ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 19:45:59.650003"], ["updated_at", "2021-11-26 19:45:59.650003"], ["name", "Sala 8"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2021-11-26 16:48:08 -0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 272.7ms | Allocations: 39582)
+Completed 200 OK in 321ms (Views: 283.0ms | ActiveRecord: 0.0ms | Allocations: 42922)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 16:48:08 -0300
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 16:48:08 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendering pages/index.html.erb
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 1962)
+
+
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 24)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 1751)
+
+
+Started GET "/users" for ::1 at 2021-11-26 16:49:38 -0300
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 20ms (ActiveRecord: 0.0ms | Allocations: 2894)
+
+
+  
+ActionController::UnknownFormat (UsersController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []):
+  
+actionpack (6.1.4.1) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.1.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.4.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/Movies" for ::1 at 2021-11-26 16:50:41 -0300
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"Movies"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 612.8ms | Allocations: 7335)
+Completed 200 OK in 630ms (Views: 618.2ms | ActiveRecord: 0.0ms | Allocations: 7801)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 16:50:41 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 24)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 426)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 16:50:41 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.2ms | Allocations: 23)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/" for ::1 at 2021-11-26 16:51:20 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 42)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-11-26 16:51:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+
+[Webpacker] Compilation failed:
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65302.6ms | Allocations: 11869)
+Completed 200 OK in 65313ms (Views: 65306.6ms | ActiveRecord: 0.0ms | Allocations: 12245)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70494.1ms | Allocations: 20079)
+Completed 200 OK in 70504ms (Views: 70497.5ms | ActiveRecord: 0.0ms | Allocations: 20455)
+
+
+Started GET "/" for ::1 at 2021-11-26 16:52:41 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 12026)
+Completed 200 OK in 84ms (Views: 59.3ms | ActiveRecord: 0.0ms | Allocations: 14828)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 16:52:42 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 24)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 1334)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 16:52:42 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/" for ::1 at 2021-11-26 16:54:47 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 7197)
+Completed 200 OK in 52ms (Views: 46.2ms | ActiveRecord: 0.0ms | Allocations: 7576)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 16:54:47 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 746)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 16:54:47 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/" for ::1 at 2021-11-26 16:54:51 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 7197)
+Completed 200 OK in 28ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 7576)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 16:54:52 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 16:54:52 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 24)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 425)
+
+
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 1604)
+
+
+Started GET "/" for ::1 at 2021-11-26 16:54:53 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 7196)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 7572)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 16:54:53 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 16:54:53 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/" for ::1 at 2021-11-26 16:54:54 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 7195)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 7571)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 16:54:54 -0300
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 16:54:54 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+Processing by PagesController#index as JS
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 656)
+
+
+  Rendered pages/index.html.erb (Duration: 6.1ms | Allocations: 364)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 762)
+
+
+Started GET "/" for ::1 at 2021-11-26 16:55:08 -0300
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 237)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.7ms | Allocations: 12033)
+Completed 200 OK in 86ms (Views: 59.8ms | ActiveRecord: 0.0ms | Allocations: 14835)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 16:55:09 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 16:55:09 -0300
+  Rendering pages/index.html.erb
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendering pages/index.html.erb
+Completed 200 OK in 19ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 2427)
+
+
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 24)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 833)
+
+
+Started GET "/" for ::1 at 2021-11-26 16:58:41 -0300
+  [1m[35m (45.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 237)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.0ms | Allocations: 12033)
+Completed 200 OK in 91ms (Views: 64.7ms | ActiveRecord: 0.0ms | Allocations: 14834)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 16:58:42 -0300
+Processing by PagesController#index as JS
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 16:58:42 -0300
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 2076)
+
+
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 1211)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:00:11 -0300
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 237)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 108.4ms | Allocations: 12033)
+Completed 200 OK in 144ms (Views: 116.5ms | ActiveRecord: 0.0ms | Allocations: 14835)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:00:12 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:00:12 -0300
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 24)
+Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 1931)
+
+
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 9ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:00:22 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 7196)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms | Allocations: 7572)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:00:22 -0300
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:00:22 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendered pages/index.html.erb (Duration: 0.2ms | Allocations: 23)
+  Rendering pages/index.html.erb
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 775)
+
+
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 24)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 828)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:00:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 7196)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 7573)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:00:27 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:00:27 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 24)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 425)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:00:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 7197)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 7576)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:00:27 -0300
+Processing by PagesController#index as JS
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:00:27 -0300
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Processing by PagesController#index as JS
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 643)
+
+
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:01:15 -0300
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 240)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 12038)
+Completed 200 OK in 91ms (Views: 68.8ms | ActiveRecord: 0.0ms | Allocations: 14842)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:01:16 -0300
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:01:16 -0300
+Processing by PagesController#index as JS
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 40ms (Views: 35.1ms | ActiveRecord: 0.0ms | Allocations: 1802)
+
+
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 1.7ms | Allocations: 24)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.0ms | Allocations: 2513)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:01:23 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 7198)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 7577)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:01:23 -0300
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:01:23 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+Processing by PagesController#index as JS
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 767)
+
+
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 24)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 827)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:01:24 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 7197)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 7576)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:01:24 -0300
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:01:24 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Processing by PagesController#index as JS
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 637)
+
+
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:01:24 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 7195)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 7571)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:01:24 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:01:24 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+  Rendered pages/index.html.erb (Duration: 0.2ms | Allocations: 23)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:08:39 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 2658)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 82.3ms | Allocations: 14346)
+Completed 200 OK in 121ms (Views: 89.9ms | ActiveRecord: 0.0ms | Allocations: 17148)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:08:40 -0300
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:08:40 -0300
+Processing by PagesController#index as JS
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendering pages/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb (Duration: 32.9ms | Allocations: 4065)
+Completed 200 OK in 56ms (Views: 51.8ms | ActiveRecord: 0.0ms | Allocations: 5962)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb (Duration: 39.7ms | Allocations: 5208)
+Completed 200 OK in 62ms (Views: 53.6ms | ActiveRecord: 0.0ms | Allocations: 6964)
+
+
+Started GET "/Movies" for ::1 at 2021-11-26 17:10:22 -0300
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"Movies"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 2437)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 9485)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.0ms | Allocations: 9864)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:10:23 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb (Duration: 20.2ms | Allocations: 2380)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:10:23 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb (Duration: 12.5ms | Allocations: 2380)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:10:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2437)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 9483)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms | Allocations: 9859)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:10:26 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb (Duration: 9.6ms | Allocations: 2380)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:10:26 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb (Duration: 8.7ms | Allocations: 2380)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:12:17 -0300
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-11-26 17:12:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 3611.9ms | Allocations: 4077)
+[Webpacker] Compilation failed:
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 27327.0ms | Allocations: 14558)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27368.3ms | Allocations: 31325)
+Completed 200 OK in 27400ms (Views: 27376.2ms | ActiveRecord: 0.0ms | Allocations: 34130)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3708.8ms | Allocations: 28760)
+Completed 200 OK in 3711ms (Views: 3710.1ms | ActiveRecord: 0.0ms | Allocations: 29160)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:13:06 -0300
+  [1m[35m (42.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2670)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 14379)
+Completed 200 OK in 80ms (Views: 55.3ms | ActiveRecord: 0.0ms | Allocations: 17181)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:13:07 -0300
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:13:07 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+  Rendering pages/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb (Duration: 15.2ms | Allocations: 4627)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 6617)
+
+
+  Rendered pages/index.html.erb (Duration: 15.8ms | Allocations: 4776)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 6303)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:13:46 -0300
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 2670)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.1ms | Allocations: 14379)
+Completed 200 OK in 94ms (Views: 68.0ms | ActiveRecord: 0.0ms | Allocations: 17181)
+
+
+Started GET "/packs/js/hello_react-aa592c0a8b9367c9f5f4.js" for ::1 at 2021-11-26 17:13:47 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/hello_react-aa592c0a8b9367c9f5f4"}
+  Rendering pages/index.html.erb
+Started GET "/packs/js/application-e421b4aa3f716bebdab1.js" for ::1 at 2021-11-26 17:13:47 -0300
+Processing by PagesController#index as JS
+  Parameters: {"path"=>"packs/js/application-e421b4aa3f716bebdab1"}
+  Rendering pages/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb (Duration: 20.5ms | Allocations: 6013)
+  Rendered pages/index.html.erb (Duration: 12.3ms | Allocations: 3324)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms | Allocations: 7612)
+
+
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 3795)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:22:03 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 257dea860e149075d2ed
+Version: webpack 4.46.0
+Time: 30777ms
+Built at: 11/26/2021 5:22:39 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-047d3137af67bfd05a73.js   4.74 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-047d3137af67bfd05a73.js.map   3.83 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-047d3137af67bfd05a73.js js/hello_react-047d3137af67bfd05a73.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 849 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 836 hidden modules
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 36317.3ms | Allocations: 4303)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36919.3ms | Allocations: 16012)
+Completed 200 OK in 36957ms (Views: 36927.0ms | ActiveRecord: 0.0ms | Allocations: 18814)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:22:48 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 17.3ms | Allocations: 2449)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 9521)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.0ms | Allocations: 9901)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:23:19 -0300
+  [1m[35m (117.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered pages/index.html.erb within layouts/application (Duration: 26.8ms | Allocations: 2656)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 104.9ms | Allocations: 14367)
+Completed 200 OK in 139ms (Views: 114.4ms | ActiveRecord: 0.0ms | Allocations: 17169)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:23:58 -0300
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 103.1ms | Allocations: 12050)
+Completed 200 OK in 138ms (Views: 109.6ms | ActiveRecord: 0.0ms | Allocations: 14853)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:24:02 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 7222)
+Completed 200 OK in 39ms (Views: 32.8ms | ActiveRecord: 0.0ms | Allocations: 7602)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:24:03 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 7221)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 7599)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:24:04 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 7220)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 7597)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:24:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 7219)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 7595)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:24:22 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3672.2ms | Allocations: 8808)
+Completed 200 OK in 3682ms (Views: 3674.8ms | ActiveRecord: 0.0ms | Allocations: 9184)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:24:34 -0300
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.3ms | Allocations: 12026)
+Completed 200 OK in 83ms (Views: 57.9ms | ActiveRecord: 0.0ms | Allocations: 14828)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:26:25 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/Users/felipelois/.rvm/gems/ruby-2.6.3/gems/webpacker-5.4.3/lib/webpacker/runner.rb:13:in ``': Interrupt
+	from /Users/felipelois/.rvm/gems/ruby-2.6.3/gems/webpacker-5.4.3/lib/webpacker/runner.rb:13:in `initialize'
+	from /Users/felipelois/.rvm/gems/ruby-2.6.3/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `new'
+	from /Users/felipelois/.rvm/gems/ruby-2.6.3/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2556.5ms | Allocations: 8788)
+Completed 200 OK in 2570ms (Views: 2563.0ms | ActiveRecord: 0.0ms | Allocations: 9167)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:27:42 -0300
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 100.0ms | Allocations: 12026)
+Completed 200 OK in 131ms (Views: 106.9ms | ActiveRecord: 0.0ms | Allocations: 14828)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:29:57 -0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 76.8ms | Allocations: 12026)
+Completed 200 OK in 106ms (Views: 84.7ms | ActiveRecord: 0.0ms | Allocations: 14828)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:30:50 -0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 228)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: d4ee4b8f977fc5879253
+Version: webpack 4.46.0
+Time: 14763ms
+Built at: 11/26/2021 5:31:09 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-dc3a4934a0f73845a4f7.js   4.74 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-dc3a4934a0f73845a4f7.js.map   3.83 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-dc3a4934a0f73845a4f7.js js/hello_react-dc3a4934a0f73845a4f7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 849 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 836 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19283.2ms | Allocations: 13513)
+Completed 200 OK in 19318ms (Views: 19291.2ms | ActiveRecord: 0.0ms | Allocations: 16315)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:31:23 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 7197)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms | Allocations: 7577)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:32:58 -0300
+  [1m[35m (43.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 228)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 87acf882d27de5fc4eb4
+Version: webpack 4.46.0
+Time: 15282ms
+Built at: 11/26/2021 5:33:18 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-99e74b83b140d1f7d58a.js   4.74 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-99e74b83b140d1f7d58a.js.map   3.83 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-99e74b83b140d1f7d58a.js js/hello_react-99e74b83b140d1f7d58a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 849 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 836 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20201.8ms | Allocations: 13517)
+Completed 200 OK in 20230ms (Views: 20208.8ms | ActiveRecord: 0.0ms | Allocations: 16319)
+
+
+Started GET "/Movies" for ::1 at 2021-11-26 17:34:40 -0300
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"Movies"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.0ms | Allocations: 7197)
+Completed 200 OK in 79ms (Views: 75.1ms | ActiveRecord: 0.0ms | Allocations: 7577)
+
+
+Started GET "/" for ::1 at 2021-11-26 17:34:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 7195)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms | Allocations: 7571)
+
+
+Started GET "/" for ::1 at 2021-11-26 18:03:00 -0300
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 228)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 6ec5fcac2546249ebc7a
+Version: webpack 4.46.0
+Time: 15833ms
+Built at: 11/26/2021 6:03:21 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-6ff93c864b5b41c57fcc.js   4.74 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-6ff93c864b5b41c57fcc.js.map   3.83 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-6ff93c864b5b41c57fcc.js js/hello_react-6ff93c864b5b41c57fcc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 849 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 836 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20870.4ms | Allocations: 13517)
+Completed 200 OK in 20907ms (Views: 20877.9ms | ActiveRecord: 0.0ms | Allocations: 16319)
+
+
+Started POST "/create_movie" for ::1 at 2021-11-26 18:03:39 -0300
+Processing by MoviesController#create as HTML
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 485)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.4.1) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.4.1) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+actionpack (6.1.4.1) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/create_movie" for ::1 at 2021-11-26 18:17:04 -0300
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#create as HTML
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 546)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.4.1) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.4.1) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+actionpack (6.1.4.1) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-11-26 18:17:09 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 118)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 78f0fe349734c30dc47f
+Version: webpack 4.46.0
+Time: 15177ms
+Built at: 11/26/2021 6:17:28 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-2f81bcf81dd412882e0e.js   4.74 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-2f81bcf81dd412882e0e.js.map   3.83 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-2f81bcf81dd412882e0e.js js/hello_react-2f81bcf81dd412882e0e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 849 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 836 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19571.2ms | Allocations: 14574)
+Completed 200 OK in 19600ms (Views: 19578.2ms | ActiveRecord: 0.0ms | Allocations: 16815)
+
+
+Started GET "/" for ::1 at 2021-11-26 18:18:03 -0300
+  [1m[35m (44.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 228)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-11-26 18:18:06 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 8e0d53bc3239b7e212ca
+Version: webpack 4.46.0
+Time: 24051ms
+Built at: 11/26/2021 6:18:33 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-2aa09316276267021703.js   4.74 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-2aa09316276267021703.js.map   3.83 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-2aa09316276267021703.js js/hello_react-2aa09316276267021703.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 849 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 836 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29211.8ms | Allocations: 20579)
+Completed 200 OK in 29325ms (Views: 29229.9ms | ActiveRecord: 0.0ms | Allocations: 23381)
+
+
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 8e0d53bc3239b7e212ca
+Version: webpack 4.46.0
+Time: 22676ms
+Built at: 11/26/2021 6:18:33 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-2aa09316276267021703.js   4.74 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-2aa09316276267021703.js.map   3.83 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-2aa09316276267021703.js js/hello_react-2aa09316276267021703.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 849 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 836 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27448.9ms | Allocations: 15269)
+Completed 200 OK in 27451ms (Views: 27449.9ms | ActiveRecord: 0.0ms | Allocations: 15649)
+
+
+Started POST "/create_movie" for ::1 at 2021-11-26 18:18:40 -0300
+Processing by MoviesController#create as HTML
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms | Allocations: 537)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.4.1) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.4.1) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+actionpack (6.1.4.1) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
