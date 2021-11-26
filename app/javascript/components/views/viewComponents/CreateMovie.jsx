@@ -41,7 +41,7 @@ export default function CreateMovie() {
                 helperText="Url de la imagen"
                 size="small"
             />
-            <Button onClick={() => createMovie()}>Crear película</Button>
+            <Button variant="contained" onClick={() => createMovie()}>Crear película</Button>
         </Box>
     );
 }

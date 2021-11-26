@@ -10,10 +10,20 @@ export default function CreateSchedule() {
     const [movie, setMovie] = useState()
     const [theater, setTheater] = useState()
     const [schedule, setSchedule] = useState()
+    const [name, setName] = useState()
+    const [mail, setMail] = useState()
 
 
     const handleMovie = (event) => {
         setMovie(event.target.value);
+    };
+
+    const handleName = (event) => {
+        setName(event.target.value);
+    };
+
+    const handleMail = (event) => {
+        setMail(event.target.value);
     };
 
     const handleTheater = (event) => {
@@ -28,6 +38,8 @@ export default function CreateSchedule() {
         console.log('movie', movie)
         console.log('theater', theater)
         console.log('schedule', schedule)
+        console.log('name', name)
+        console.log('mail', mail)
     }
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -35,10 +47,11 @@ export default function CreateSchedule() {
             <TextField
                 id="outlined-select-movie"
                 select
-                label="Select"
+                label="Película"
                 value={movie}
                 onChange={handleMovie}
                 helperText="Eliga la película"
+                size="small"
             >
                 {movies.map((option) => (
                     <MenuItem key={option.id} value={option.id}>
@@ -49,10 +62,11 @@ export default function CreateSchedule() {
             <TextField
                 id="outlined-select-theater"
                 select
-                label="Select"
+                label="Sala"
                 value={theater}
                 onChange={handleTheater}
                 helperText="Eliga la sala"
+                size="small"
             >
                 {theaters.map((option) => (
                     <MenuItem key={option} value={option}>
@@ -63,10 +77,11 @@ export default function CreateSchedule() {
             <TextField
                 id="outlined-select-schedule"
                 select
-                label="Select"
+                label="Horario"
                 value={schedule}
                 onChange={handleSchedule}
                 helperText="Eliga un horario"
+                size="small"
             >
                 {schedules.map((option) => (
                     <MenuItem key={option} value={option}>
@@ -74,7 +89,25 @@ export default function CreateSchedule() {
                     </MenuItem>
                 ))}
             </TextField>
-            <Button onClick={() => createFunction()}>Crear función</Button>
+            <TextField
+                required
+                id="outlined-name"
+                label="Nombre"
+                value={name}
+                onChange={handleName}
+                helperText="Eliga el nombre de quien hace la reserva"
+                size="small"
+            />
+            <TextField
+                required
+                id="outlined-mail"
+                label="Mail"
+                value={mail}
+                onChange={handleMail}
+                helperText="Mail de la reserva"
+                size="small"
+            />
+            <Button variant="contained" onClick={() => createFunction()}>Crear función</Button>
         </Box>
     );
 }
