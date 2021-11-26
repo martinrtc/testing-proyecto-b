@@ -1,5 +1,9 @@
 node_modules
-tmp
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+tmp/*
 
 /public/packs
 /public/packs-test
@@ -7,3 +11,8 @@ tmp
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+.ruby-version
+
+# Docker
+.env
