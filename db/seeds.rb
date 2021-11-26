@@ -16,3 +16,23 @@ theaters = Theater.create([
     {name: 'Sala 7'},
     {name: 'Sala 8'},
     ])
+
+movies = Movie.create([
+    {name: "John Wick"},
+    {name: "The lord of the rings"},
+    {name: "Dead poets society"},
+    {name: "Good Will Hunting"}
+])
+
+users = User.create([
+    {name: "Mushu", email: "tu.peor.pesadilla@mulan.cl"},
+    {name: "Pedro Picapiedas", email: "pp@rock.com"},
+    {name: "yo", email: "yo@yo.yo"}
+])
+
+schedules = Schedule.create([
+    {hour: "matine", movie_id: 1, theater_id: 1},
+    {hour: "matine", movie_id: 1, theater_id: 2},
+    {hour: "tanda", movie_id: 1, theater_id: 1},
+    {hour: "matine", movie_id: 2, theater_id: 1}
+])
