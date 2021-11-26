@@ -1,15 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Typography, TextField, Select } from '@mui/material'
+import { Box, Typography, TextField, Button } from '@mui/material'
 
 
 
 export default function CreateMovie() {
     const [movieName, setMovieName] = useState('')
+    const [movieImage, setMovieImage] = useState('')
 
-    const handleChange = (event) => {
+    const handleMovieName = (event) => {
         setMovieName(event.target.value);
-        console.log(movieName)
     };
+
+    const handleMovieImage = (event) => {
+        setMovieImage(event.target.value);
+
+    };
+
+    const createMovie = () => {
+        console.log('movie name', movieName)
+        console.log('movie url', movieImage)
+    }
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Typography>Crear película</Typography>
@@ -18,10 +28,20 @@ export default function CreateMovie() {
                 id="outlined-required"
                 label="Nombre"
                 value={movieName}
-                onChange={handleChange}
+                onChange={handleMovieName}
                 helperText="Eliga el nombre de la película"
                 size="small"
             />
+            <TextField
+                required
+                id="outlined-required"
+                label="Url imagen"
+                value={movieImage}
+                onChange={handleMovieImage}
+                helperText="Url de la imagen"
+                size="small"
+            />
+            <Button variant="contained" onClick={() => createMovie()}>Crear película</Button>
         </Box>
     );
 }

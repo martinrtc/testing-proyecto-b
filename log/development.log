@@ -4351,3 +4351,228 @@ Entrypoint hello_react = js/hello_react-635d8a29fbec6ac99532.js js/hello_react-6
 Completed 200 OK in 9965ms (Views: 9964.4ms | ActiveRecord: 0.0ms | Allocations: 17056)
 
 
+Started GET "/" for ::1 at 2021-11-25 17:36:23 -0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 135.0ms | Allocations: 50665)
+Completed 200 OK in 152ms (Views: 140.0ms | ActiveRecord: 0.0ms | Allocations: 53463)
+
+
+Started GET "/" for ::1 at 2021-11-25 17:36:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 6181)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 6560)
+
+
+Started GET "/" for ::1 at 2021-11-26 12:20:23 -0300
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 223)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 25cf36a92a67a49e59b8
+Version: webpack 4.46.0
+Time: 5865ms
+Built at: 2021-11-26 12:20:31
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-635d8a29fbec6ac99532.js   4.73 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-635d8a29fbec6ac99532.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-635d8a29fbec6ac99532.js js/hello_react-635d8a29fbec6ac99532.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 835 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8231.6ms | Allocations: 11756)
+Completed 200 OK in 8250ms (Views: 8237.3ms | ActiveRecord: 0.0ms | Allocations: 14554)
+
+
+Started GET "/" for ::1 at 2021-11-26 12:21:24 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 38c63fe7467a62034b4c
+Version: webpack 4.46.0
+Time: 5676ms
+Built at: 2021-11-26 12:21:31
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-1a34ba1cf7aedceb18bc.js   4.73 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-1a34ba1cf7aedceb18bc.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-1a34ba1cf7aedceb18bc.js js/hello_react-1a34ba1cf7aedceb18bc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 836 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7115.1ms | Allocations: 7526)
+Completed 200 OK in 7117ms (Views: 7116.1ms | ActiveRecord: 0.0ms | Allocations: 7905)
+
+
+Started GET "/" for ::1 at 2021-11-26 12:22:00 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 618118e5886a64522113
+Version: webpack 4.46.0
+Time: 5672ms
+Built at: 2021-11-26 12:22:07
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-f4a8ea5e106b772c5703.js   4.73 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-f4a8ea5e106b772c5703.js.map   3.82 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-f4a8ea5e106b772c5703.js js/hello_react-f4a8ea5e106b772c5703.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 836 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7059.7ms | Allocations: 7521)
+Completed 200 OK in 7061ms (Views: 7060.4ms | ActiveRecord: 0.0ms | Allocations: 7900)
+
+
+Started GET "/" for ::1 at 2021-11-26 12:27:54 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: 16b07399de7c5504e7d1
+Version: webpack 4.46.0
+Time: 6556ms
+Built at: 2021-11-26 12:28:02
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-a2e449d2d07207967570.js   4.74 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-a2e449d2d07207967570.js.map   3.83 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-a2e449d2d07207967570.js js/hello_react-a2e449d2d07207967570.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 836 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8083.3ms | Allocations: 7524)
+Completed 200 OK in 8085ms (Views: 8084.3ms | Allocations: 7899)
+
+
+Started GET "/" for ::1 at 2021-11-26 12:28:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/Martin/Desktop/testing-proyecto-b/public/packs
+[Webpacker] Hash: b904bf4539ae22105313
+Version: webpack 4.46.0
+Time: 5887ms
+Built at: 2021-11-26 12:28:13
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-167a5cd5c5746cc64992.js   4.74 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-167a5cd5c5746cc64992.js.map   3.83 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-167a5cd5c5746cc64992.js js/hello_react-167a5cd5c5746cc64992.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 782 bytes {hello_react} [built]
+[./app/javascript/styles/theme.js] 109 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 836 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7340.7ms | Allocations: 7525)
+Completed 200 OK in 7343ms (Views: 7341.7ms | Allocations: 7902)
+
+
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6552369198988958730)[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddNameToTheaters (20211126161752)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.4ms)[0m  [1m[35mALTER TABLE "theaters" ADD "name" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211126161752"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6552369198988958730)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (7.2ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 16:22:47.511010"], ["updated_at", "2021-11-26 16:22:47.511010"], ["name", "Sala 1"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.4ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 16:22:47.549576"], ["updated_at", "2021-11-26 16:22:47.549576"], ["name", "Sala 2"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.3ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 16:22:47.552726"], ["updated_at", "2021-11-26 16:22:47.552726"], ["name", "Sala 3"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.2ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 16:22:47.555541"], ["updated_at", "2021-11-26 16:22:47.555541"], ["name", "Sala 4"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.2ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 16:22:47.558369"], ["updated_at", "2021-11-26 16:22:47.558369"], ["name", "Sala 5"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.2ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 16:22:47.561020"], ["updated_at", "2021-11-26 16:22:47.561020"], ["name", "Sala 6"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.2ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 16:22:47.563521"], ["updated_at", "2021-11-26 16:22:47.563521"], ["name", "Sala 7"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTheater Create (0.2ms)[0m  [1m[32mINSERT INTO "theaters" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-11-26 16:22:47.565897"], ["updated_at", "2021-11-26 16:22:47.565897"], ["name", "Sala 8"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTheater Load (0.4ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" ORDER BY "theaters"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
