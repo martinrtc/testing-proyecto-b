@@ -4,6 +4,19 @@ import { Box, Typography, TextField, MenuItem, Button } from '@mui/material'
 
 
 export default function CreateSchedule() {
+    const getDB = () => {
+        const requestOptions = {
+            method: 'GET',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          };
+        fetch("/movie", requestOptions).then((response) => {
+            console.log(response.json());
+            return response.json();
+        });
+    };
+    
     const movies = [{name: 'Avatar', id: 1},{name: 'Gladiator', id: 2},{name: 'Toy Story', id: 3}]
     const theaters = ['Sala 1', 'Sala 2', 'Sala 3', 'Sala 4', 'Sala 5', 'Sala 6', 'Sala 7', 'Sala 8']
     const schedules = ['matine', 'tanda', 'noche']
@@ -50,6 +63,22 @@ export default function CreateSchedule() {
           };
         fetch("/create_movie", requestOptions);
     }
+
+    useEffect(() => {
+        const requestOptions = {
+            method: 'GET',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          };
+        fetch("/movies", requestOptions)
+          .then((response) => {
+            console.log("Hasta aqui piola");
+            console.log("--->", response.json());
+            // return response.json();
+        });
+      });
+
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Typography>Crear función</Typography>

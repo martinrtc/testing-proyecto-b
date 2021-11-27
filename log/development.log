@@ -11424,3 +11424,1742 @@ Entrypoint hello_react = js/hello_react-90393775df37247b2383.js js/hello_react-9
 Completed 200 OK in 32113ms (Views: 32104.3ms | Allocations: 9200)
 
 
+Started GET "/Movies" for ::1 at 2021-11-27 16:04:36 -0300
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"Movies"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 228)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 010b3e90118af4aa72bd
+Version: webpack 4.46.0
+Time: 16303ms
+Built at: 11/27/2021 4:04:57 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-2241aa2d0eb45ced3f8e.js   4.86 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-2241aa2d0eb45ced3f8e.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-2241aa2d0eb45ced3f8e.js js/hello_react-2241aa2d0eb45ced3f8e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20832.0ms | Allocations: 13605)
+Completed 200 OK in 20863ms (Views: 20838.4ms | ActiveRecord: 0.0ms | Allocations: 16371)
+
+
+Started GET "/Movies/1" for ::1 at 2021-11-27 16:05:21 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"Movies/1"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 7244)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms | Allocations: 7622)
+
+
+Started POST "/Movies" for ::1 at 2021-11-27 16:07:58 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/Movies"):
+  
+Started POST "/create_movie" for ::1 at 2021-11-27 16:08:42 -0300
+Processing by MoviesController#create as */*
+  Parameters: {"name"=>"batman", "movie"=>{"name"=>"batman"}}
+  [1m[36mTRANSACTION (46.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movies_controller.rb:22:in `create'
+  [1m[36mMovie Create (17.1ms)[0m  [1m[32mINSERT INTO "movies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "batman"], ["created_at", "2021-11-27 19:08:42.488909"], ["updated_at", "2021-11-27 19:08:42.488909"]]
+  ↳ app/controllers/movies_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movies_controller.rb:22:in `create'
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 147.0ms | Allocations: 6424)
+
+
+  
+ActionView::MissingTemplate (Missing template movies/show, application/show with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/app/views"
+  * "/Users/felipelois/.rvm/gems/ruby-2.6.3/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/felipelois/.rvm/gems/ruby-2.6.3/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/movies_controller.rb:23:in `create'
+Started POST "/create_movie" for ::1 at 2021-11-27 16:10:46 -0300
+Processing by MoviesController#create as */*
+  Parameters: {"name"=>"batman1", "movie"=>{"name"=>"batman1"}}
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movies_controller.rb:22:in `create'
+  [1m[36mMovie Create (10.2ms)[0m  [1m[32mINSERT INTO "movies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "batman1"], ["created_at", "2021-11-27 19:10:46.510913"], ["updated_at", "2021-11-27 19:10:46.510913"]]
+  ↳ app/controllers/movies_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movies_controller.rb:22:in `create'
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 15.6ms | Allocations: 3148)
+
+
+  
+ActionView::MissingTemplate (Missing template movies/show, application/show with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/app/views"
+  * "/Users/felipelois/.rvm/gems/ruby-2.6.3/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/felipelois/.rvm/gems/ruby-2.6.3/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/movies_controller.rb:23:in `create'
+Started POST "/create_movies" for ::1 at 2021-11-27 16:11:25 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/create_movies"):
+  
+Started GET "/movie" for ::1 at 2021-11-27 16:12:03 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.5ms | Allocations: 7380)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.0ms | Allocations: 7769)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:20:39 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 22aa654acee1be944f6e
+Version: webpack 4.46.0
+Time: 21754ms
+Built at: 11/27/2021 4:21:06 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-e815994353901bef27ae.js   4.86 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-e815994353901bef27ae.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-e815994353901bef27ae.js js/hello_react-e815994353901bef27ae.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26859.0ms | Allocations: 8750)
+Completed 200 OK in 26865ms (Views: 26861.3ms | Allocations: 9123)
+
+
+Started GET "/" for ::1 at 2021-11-27 16:21:08 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 7258)
+Completed 200 OK in 39ms (Views: 35.7ms | Allocations: 7671)
+
+
+Started GET "/" for ::1 at 2021-11-27 16:21:08 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 7260)
+Completed 200 OK in 49ms (Views: 47.9ms | Allocations: 7623)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:21:22 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 7198)
+Completed 200 OK in 28ms (Views: 26.5ms | Allocations: 7569)
+
+
+Started GET "/" for ::1 at 2021-11-27 16:22:09 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 70da13f8251e54d5714e
+Version: webpack 4.46.0
+Time: 15553ms
+Built at: 11/27/2021 4:22:31 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-73ec59eb56337ff4a70c.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-73ec59eb56337ff4a70c.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-73ec59eb56337ff4a70c.js js/hello_react-73ec59eb56337ff4a70c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21622.2ms | Allocations: 8733)
+Completed 200 OK in 21625ms (Views: 21623.3ms | Allocations: 9096)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:22:38 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 7243)
+Completed 200 OK in 30ms (Views: 29.1ms | Allocations: 7614)
+
+
+Started GET "/" for ::1 at 2021-11-27 16:24:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 42)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-11-27 16:24:46 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: cc0b92930473cb63ff48
+Version: webpack 4.46.0
+Time: 21022ms
+Built at: 11/27/2021 4:25:07 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-6fab2da677964822db38.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-6fab2da677964822db38.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-6fab2da677964822db38.js js/hello_react-6fab2da677964822db38.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25888.0ms | Allocations: 15775)
+Completed 200 OK in 25894ms (Views: 25890.1ms | Allocations: 16139)
+
+
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: cc0b92930473cb63ff48
+Version: webpack 4.46.0
+Time: 18713ms
+Built at: 11/27/2021 4:25:09 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-6fab2da677964822db38.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-6fab2da677964822db38.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-6fab2da677964822db38.js js/hello_react-6fab2da677964822db38.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22765.6ms | Allocations: 13369)
+Completed 200 OK in 22767ms (Views: 22766.4ms | Allocations: 13732)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:25:13 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 7243)
+Completed 200 OK in 36ms (Views: 34.9ms | Allocations: 7614)
+
+
+Started GET "/" for ::1 at 2021-11-27 16:26:30 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: a1941f7e548ecb374abc
+Version: webpack 4.46.0
+Time: 13595ms
+Built at: 11/27/2021 4:26:47 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-063027d06d7cde7a2455.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-063027d06d7cde7a2455.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-063027d06d7cde7a2455.js js/hello_react-063027d06d7cde7a2455.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17197.9ms | Allocations: 8724)
+Completed 200 OK in 17205ms (Views: 17200.3ms | Allocations: 9087)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:26:53 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 7243)
+Completed 200 OK in 36ms (Views: 35.4ms | Allocations: 7615)
+
+
+Started GET "/" for ::1 at 2021-11-27 16:29:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 64138cb51094e8f87674
+Version: webpack 4.46.0
+Time: 14011ms
+Built at: 11/27/2021 4:29:45 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-8037c64a269c285d54d0.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-8037c64a269c285d54d0.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-8037c64a269c285d54d0.js js/hello_react-8037c64a269c285d54d0.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17746.7ms | Allocations: 8727)
+Completed 200 OK in 17749ms (Views: 17747.8ms | Allocations: 9090)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:29:55 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.1ms | Allocations: 7243)
+Completed 200 OK in 81ms (Views: 80.0ms | Allocations: 7614)
+
+
+Started GET "/" for ::1 at 2021-11-27 16:31:49 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 7242)
+Completed 200 OK in 50ms (Views: 49.3ms | Allocations: 7605)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:31:54 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 7242)
+Completed 200 OK in 37ms (Views: 35.8ms | Allocations: 7613)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:32:13 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.0ms | Allocations: 7242)
+Completed 200 OK in 63ms (Views: 60.0ms | Allocations: 7613)
+
+
+Started GET "/" for ::1 at 2021-11-27 16:33:03 -0300
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 113.2ms | Allocations: 12075)
+Completed 200 OK in 142ms (Views: 119.3ms | ActiveRecord: 0.0ms | Allocations: 14849)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:33:11 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 7199)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.0ms | Allocations: 7716)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:33:23 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 7243)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 7616)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:34:00 -0300
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"movie"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 7244)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms | Allocations: 7610)
+
+
+Started GET "/schedules" for ::1 at 2021-11-27 16:34:48 -0300
+Processing by SchedulesController#index as */*
+No template found for SchedulesController#index, rendering head :no_content
+Completed 204 No Content in 44ms (ActiveRecord: 0.0ms | Allocations: 4472)
+
+
+Started GET "/scheduless" for ::1 at 2021-11-27 16:34:57 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"scheduless"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 7244)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 7615)
+
+
+Started GET "/sc" for ::1 at 2021-11-27 16:35:07 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"sc"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 7242)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 7613)
+
+
+Started POST "/sc" for ::1 at 2021-11-27 16:35:10 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/sc"):
+  
+Started GET "/schedules" for ::1 at 2021-11-27 16:35:26 -0300
+Processing by SchedulesController#index as */*
+No template found for SchedulesController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/schedules/1/seats" for ::1 at 2021-11-27 16:35:51 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"schedules/1/seats"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 7380)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 7796)
+
+
+Started GET "/schedules/1/seats" for ::1 at 2021-11-27 16:37:33 -0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"schedules/1/seats"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.0ms | Allocations: 12075)
+Completed 200 OK in 98ms (Views: 72.4ms | ActiveRecord: 0.0ms | Allocations: 14898)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:37:41 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 7244)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 7618)
+
+
+Started GET "/movies" for ::1 at 2021-11-27 16:37:46 -0300
+Processing by MoviesController#index as */*
+No template found for MoviesController#index, rendering head :no_content
+Completed 204 No Content in 19ms (ActiveRecord: 0.0ms | Allocations: 3926)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:38:06 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 7244)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms | Allocations: 7617)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:38:30 -0300
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.1ms | Allocations: 12075)
+Completed 200 OK in 90ms (Views: 63.5ms | ActiveRecord: 0.0ms | Allocations: 14898)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:39:13 -0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.3ms | Allocations: 12075)
+Completed 200 OK in 98ms (Views: 70.4ms | ActiveRecord: 0.0ms | Allocations: 14898)
+
+
+Started GET "/" for ::1 at 2021-11-27 16:40:06 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 97.5ms | Allocations: 7244)
+Completed 200 OK in 106ms (Views: 100.2ms | ActiveRecord: 0.0ms | Allocations: 7713)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 16:40:10 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 7198)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms | Allocations: 7571)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:07:40 -0300
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 12076)
+Completed 200 OK in 95ms (Views: 69.1ms | ActiveRecord: 0.0ms | Allocations: 14853)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:07:46 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 104.0ms | Allocations: 7198)
+Completed 200 OK in 107ms (Views: 105.3ms | ActiveRecord: 0.0ms | Allocations: 7715)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:08:25 -0300
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 92.4ms | Allocations: 12075)
+Completed 200 OK in 123ms (Views: 100.4ms | ActiveRecord: 0.0ms | Allocations: 14849)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:08:29 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.0ms | Allocations: 7199)
+Completed 200 OK in 66ms (Views: 64.1ms | ActiveRecord: 0.0ms | Allocations: 7716)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:09:16 -0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.5ms | Allocations: 12075)
+Completed 200 OK in 78ms (Views: 55.6ms | ActiveRecord: 0.0ms | Allocations: 14849)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:09:24 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 7199)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.0ms | Allocations: 7716)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:10:18 -0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 228)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 55b53808cad95aab478f
+Version: webpack 4.46.0
+Time: 14946ms
+Built at: 11/27/2021 5:10:37 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-e691357ba2be0ebe7616.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-e691357ba2be0ebe7616.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-e691357ba2be0ebe7616.js js/hello_react-e691357ba2be0ebe7616.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18556.8ms | Allocations: 13586)
+Completed 200 OK in 18588ms (Views: 18563.9ms | ActiveRecord: 0.0ms | Allocations: 16360)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:10:42 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 7198)
+Completed 200 OK in 34ms (Views: 27.4ms | ActiveRecord: 0.0ms | Allocations: 7716)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:12:41 -0300
+  [1m[35m (43.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 228)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: ea200bf8f07e592c4af6
+Version: webpack 4.46.0
+Time: 14806ms
+Built at: 11/27/2021 5:13:00 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-552853d46c066d11176e.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-552853d46c066d11176e.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-552853d46c066d11176e.js js/hello_react-552853d46c066d11176e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18706.7ms | Allocations: 13586)
+Completed 200 OK in 18738ms (Views: 18713.9ms | ActiveRecord: 0.0ms | Allocations: 16360)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:13:10 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 7199)
+Completed 200 OK in 37ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 7717)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:13:38 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 7245)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.0ms | Allocations: 7618)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:14:46 -0300
+  [1m[35m (44.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 228)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 5887ca8769f555f13e3e
+Version: webpack 4.46.0
+Time: 14897ms
+Built at: 11/27/2021 5:15:04 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-999c35c01fe7cc397b1d.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-999c35c01fe7cc397b1d.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-999c35c01fe7cc397b1d.js js/hello_react-999c35c01fe7cc397b1d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18660.4ms | Allocations: 13586)
+Completed 200 OK in 18688ms (Views: 18665.9ms | ActiveRecord: 0.0ms | Allocations: 16360)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:15:12 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 7199)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 7717)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:15:55 -0300
+  [1m[35m (43.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 228)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 248113b00f8be964f12a
+Version: webpack 4.46.0
+Time: 13293ms
+Built at: 11/27/2021 5:16:12 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-481753e4e44c8a699b35.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-481753e4e44c8a699b35.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-481753e4e44c8a699b35.js js/hello_react-481753e4e44c8a699b35.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16734.1ms | Allocations: 13584)
+Completed 200 OK in 16761ms (Views: 16740.7ms | ActiveRecord: 0.0ms | Allocations: 16358)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:16:27 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 7198)
+Completed 200 OK in 63ms (Views: 56.7ms | ActiveRecord: 0.0ms | Allocations: 7715)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:16:52 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-11-27 17:16:56 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 5990c712560ce2173084
+Version: webpack 4.46.0
+Time: 22431ms
+Built at: 11/27/2021 5:17:20 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-455fba4177299398dbbb.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-455fba4177299398dbbb.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-455fba4177299398dbbb.js js/hello_react-455fba4177299398dbbb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27947.3ms | Allocations: 15815)
+Completed 200 OK in 27950ms (Views: 27948.5ms | ActiveRecord: 0.0ms | Allocations: 16178)
+
+
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 5990c712560ce2173084
+Version: webpack 4.46.0
+Time: 21767ms
+Built at: 11/27/2021 5:17:21 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-455fba4177299398dbbb.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-455fba4177299398dbbb.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-455fba4177299398dbbb.js js/hello_react-455fba4177299398dbbb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25256.3ms | Allocations: 13353)
+Completed 200 OK in 25258ms (Views: 25257.3ms | ActiveRecord: 0.0ms | Allocations: 13718)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:17:28 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 7244)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms | Allocations: 7617)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:18:39 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 7244)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 7618)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:20:53 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 7242)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms | Allocations: 7605)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:20:58 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.3ms | Allocations: 7246)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.0ms | Allocations: 7617)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:21:48 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 42)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-11-27 17:21:52 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+
+[Webpacker] Compilation failed:
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3445.7ms | Allocations: 10810)
+Completed 200 OK in 3450ms (Views: 3448.8ms | Allocations: 11978)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6852.8ms | Allocations: 20275)
+Completed 200 OK in 6864ms (Views: 6858.2ms | Allocations: 20646)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:22:04 -0300
+  [1m[35m (38.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 89.3ms | Allocations: 12075)
+Completed 200 OK in 122ms (Views: 98.7ms | ActiveRecord: 0.0ms | Allocations: 14849)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:22:11 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 7199)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 7716)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:22:41 -0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 228)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-11-27 17:22:58 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 63fd1758d493b826e6f7
+Version: webpack 4.46.0
+Time: 20706ms
+Built at: 11/27/2021 5:23:06 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-dde98f588b8b20bcce07.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-dde98f588b8b20bcce07.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-dde98f588b8b20bcce07.js js/hello_react-dde98f588b8b20bcce07.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24465.2ms | Allocations: 20661)
+Completed 200 OK in 24496ms (Views: 24472.5ms | ActiveRecord: 0.0ms | Allocations: 23435)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:23:17 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | Allocations: 7198)
+Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 0.0ms | Allocations: 7714)
+
+
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 63fd1758d493b826e6f7
+Version: webpack 4.46.0
+Time: 27987ms
+Built at: 11/27/2021 5:23:31 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-dde98f588b8b20bcce07.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-dde98f588b8b20bcce07.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-dde98f588b8b20bcce07.js js/hello_react-dde98f588b8b20bcce07.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33210.1ms | Allocations: 33387)
+Completed 200 OK in 33224ms (Views: 33213.8ms | ActiveRecord: 0.0ms | Allocations: 33755)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:44:07 -0300
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 77.1ms | Allocations: 12075)
+Completed 200 OK in 107ms (Views: 84.3ms | ActiveRecord: 0.0ms | Allocations: 14849)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:44:25 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.5ms | Allocations: 7198)
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 0.0ms | Allocations: 7715)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:48:50 -0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 228)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-11-27 17:48:56 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 2b16c282d03452b15f4a
+Version: webpack 4.46.0
+Time: 26372ms
+Built at: 11/27/2021 5:49:20 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-69611df871724413c1bd.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-69611df871724413c1bd.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-69611df871724413c1bd.js js/hello_react-69611df871724413c1bd.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30116.7ms | Allocations: 20677)
+Completed 200 OK in 30154ms (Views: 30126.6ms | ActiveRecord: 0.0ms | Allocations: 23451)
+
+
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 2b16c282d03452b15f4a
+Version: webpack 4.46.0
+Time: 22176ms
+Built at: 11/27/2021 5:49:22 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-69611df871724413c1bd.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-69611df871724413c1bd.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-69611df871724413c1bd.js js/hello_react-69611df871724413c1bd.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26272.1ms | Allocations: 15355)
+Completed 200 OK in 26275ms (Views: 26273.5ms | ActiveRecord: 0.0ms | Allocations: 15722)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:50:17 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 7198)
+Completed 200 OK in 40ms (Views: 34.3ms | ActiveRecord: 0.0ms | Allocations: 7714)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:52:18 -0300
+  [1m[35m (42.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.1ms | Allocations: 12075)
+Completed 200 OK in 77ms (Views: 53.9ms | ActiveRecord: 0.0ms | Allocations: 14849)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:52:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 7242)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 7606)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:52:57 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 86.1ms | Allocations: 7197)
+Completed 200 OK in 89ms (Views: 86.8ms | ActiveRecord: 0.0ms | Allocations: 7712)
+
+
+Started GET "/movie" for ::1 at 2021-11-27 17:53:35 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"movie"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 7244)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.0ms | Allocations: 7617)
+
+
+Started POST "/movie" for ::1 at 2021-11-27 17:53:43 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/movie"):
+  
+Started GET "/movies" for ::1 at 2021-11-27 17:54:36 -0300
+Processing by MoviesController#index as */*
+No template found for MoviesController#index, rendering head :no_content
+Completed 204 No Content in 29ms (ActiveRecord: 0.0ms | Allocations: 3989)
+
+
+Started POST "/movies" for ::1 at 2021-11-27 17:54:43 -0300
+Processing by MoviesController#create as */*
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 600)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: movie):
+  
+app/controllers/movies_controller.rb:54:in `movie_params'
+app/controllers/movies_controller.rb:21:in `create'
+Started GET "/movies" for ::1 at 2021-11-27 17:54:56 -0300
+Processing by MoviesController#index as */*
+No template found for MoviesController#index, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 274)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:55:46 -0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 228)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 056b34b31e1b1ff6e722
+Version: webpack 4.46.0
+Time: 14133ms
+Built at: 11/27/2021 5:56:04 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-af01d443376afc4e66b7.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-af01d443376afc4e66b7.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-af01d443376afc4e66b7.js js/hello_react-af01d443376afc4e66b7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17842.3ms | Allocations: 13585)
+Completed 200 OK in 17872ms (Views: 17849.8ms | ActiveRecord: 0.0ms | Allocations: 16359)
+
+
+Started GET "/all_movies" for ::1 at 2021-11-27 17:56:27 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"all_movies", "page"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 7197)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.0ms | Allocations: 7713)
+
+
+Started GET "/" for ::1 at 2021-11-27 17:57:09 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 7245)
+Completed 200 OK in 59ms (Views: 53.5ms | ActiveRecord: 0.0ms | Allocations: 7611)
+
+
+Started GET "/all_movies" for ::1 at 2021-11-27 17:57:12 -0300
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"all_movies"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 7244)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.0ms | Allocations: 7610)
+
+
+Started GET "/Movies" for ::1 at 2021-11-27 17:57:18 -0300
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"Movies"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 7246)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms | Allocations: 7609)
+
+
+Started GET "/Movies" for ::1 at 2021-11-27 17:57:19 -0300
+Processing by PagesController#index as HTML
+  Parameters: {"path"=>"Movies"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 7242)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 7605)
+
+
+Started GET "/" for ::1 at 2021-11-27 18:09:24 -0300
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 228)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 70889016c0b91735b75b
+Version: webpack 4.46.0
+Time: 20695ms
+Built at: 11/27/2021 6:09:50 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-24675428eb79d5c86762.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-24675428eb79d5c86762.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-24675428eb79d5c86762.js js/hello_react-24675428eb79d5c86762.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25031.5ms | Allocations: 13604)
+Completed 200 OK in 25062ms (Views: 25037.3ms | ActiveRecord: 0.0ms | Allocations: 16378)
+
+
+Started GET "/movies" for ::1 at 2021-11-27 18:09:55 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+No template found for MoviesController#index, rendering head :no_content
+Completed 204 No Content in 12ms (ActiveRecord: 55.3ms | Allocations: 1800)
+
+
+Started GET "/movies" for ::1 at 2021-11-27 18:13:20 -0300
+Processing by MoviesController#index as */*
+No template found for MoviesController#index, rendering head :no_content
+Completed 204 No Content in 9ms (ActiveRecord: 0.0ms | Allocations: 276)
+
+
+Started GET "/movies" for ::1 at 2021-11-27 18:13:33 -0300
+  [1m[35m (42.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms | Allocations: 5623)
+
+
+  
+NoMethodError (undefined method `respond_with' for #<MoviesController:0x007faa8cfc72c0>
+Did you mean?  respond_to):
+  
+app/controllers/movies_controller.rb:9:in `index'
+Started GET "/all_movies" for ::1 at 2021-11-27 18:14:04 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"all_movies"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.6ms | Allocations: 11959)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.0ms | Allocations: 13253)
+
+
+Started GET "/all_movies" for ::1 at 2021-11-27 18:14:42 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"all_movies"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.3ms | Allocations: 7243)
+Completed 200 OK in 76ms (Views: 74.8ms | ActiveRecord: 0.0ms | Allocations: 7615)
+
+
+Started GET "/movies" for ::1 at 2021-11-27 18:14:46 -0300
+Processing by MoviesController#index as */*
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 2525)
+
+
+  
+NoMethodError (undefined method `respond_with' for #<MoviesController:0x007faa90950a28>
+Did you mean?  respond_to):
+  
+app/controllers/movies_controller.rb:9:in `index'
+Started GET "/movies" for ::1 at 2021-11-27 18:14:55 -0300
+Processing by MoviesController#index as */*
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 4004)
+
+
+  
+NoMethodError (undefined method `respond_with' for #<MoviesController:0x007faa94177280>
+Did you mean?  respond_to):
+  
+app/controllers/movies_controller.rb:9:in `index'
+Started GET "/movies" for ::1 at 2021-11-27 18:15:09 -0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms | Allocations: 5617)
+
+
+  
+NoMethodError (undefined method `respond_with' for #<MoviesController:0x007fa47a225968>
+Did you mean?  respond_to):
+  
+app/controllers/movies_controller.rb:9:in `index'
+Started GET "/movies" for ::1 at 2021-11-27 18:15:22 -0300
+Processing by MoviesController#index as */*
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 2552)
+
+
+  
+NoMethodError (undefined method `respond_with' for #<MoviesController:0x007fa474594118>
+Did you mean?  respond_to):
+  
+app/controllers/movies_controller.rb:9:in `index'
+Started GET "/movies" for ::1 at 2021-11-27 18:15:36 -0300
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+Completed 406 Not Acceptable in 35ms (ActiveRecord: 0.0ms | Allocations: 3710)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/movies_controller.rb:9:in `index'
+Started GET "/movies" for ::1 at 2021-11-27 18:16:18 -0300
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+Completed 406 Not Acceptable in 33ms (ActiveRecord: 0.0ms | Allocations: 3710)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/movies_controller.rb:9:in `index'
+Started GET "/movies" for ::1 at 2021-11-27 18:17:43 -0300
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+No template found for MoviesController#index, rendering head :no_content
+Completed 204 No Content in 47ms (ActiveRecord: 0.0ms | Allocations: 4875)
+
+
+Started GET "/" for ::1 at 2021-11-27 18:18:03 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 12071)
+Completed 200 OK in 60ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 13908)
+
+
+Started GET "/movies" for ::1 at 2021-11-27 18:18:06 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+No template found for MoviesController#index, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 16.0ms | Allocations: 274)
+
+
+Started GET "/movies" for ::1 at 2021-11-27 18:19:04 -0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+No template found for MoviesController#index, rendering head :no_content
+Completed 204 No Content in 45ms (ActiveRecord: 0.0ms | Allocations: 4875)
+
+
+Started GET "/" for ::1 at 2021-11-27 18:19:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 12071)
+Completed 200 OK in 65ms (Views: 59.1ms | ActiveRecord: 0.0ms | Allocations: 13908)
+
+
+Started GET "/movies" for ::1 at 2021-11-27 18:19:29 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+No template found for MoviesController#index, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 28.2ms | Allocations: 274)
+
+
+Started GET "/movies" for ::1 at 2021-11-27 18:22:09 -0300
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms | Allocations: 5572)
+
+
+  
+NoMethodError (undefined method `json_response' for #<MoviesController:0x007fa1e0f5a878>):
+  
+app/controllers/movies_controller.rb:9:in `index'
+Started GET "/movies" for ::1 at 2021-11-27 18:24:34 -0300
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/app/controllers/movies_controller.rb:9: syntax error, unexpected ->, expecting end
+    return response()->json(['name' => 'Laravel Reci...
+                     ^~
+/Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/app/controllers/movies_controller.rb:9: syntax error, unexpected ')', expecting end
+...vel Recipes', 'state' => 'NY']);
+...                              ^
+/Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/app/controllers/movies_controller.rb:56: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/movies_controller.rb:9: syntax error, unexpected ->, expecting end
+app/controllers/movies_controller.rb:9: syntax error, unexpected ')', expecting end
+app/controllers/movies_controller.rb:56: syntax error, unexpected end-of-input, expecting end
+app/controllers/movies_controller.rb:9: syntax error, unexpected ->, expecting end
+app/controllers/movies_controller.rb:9: syntax error, unexpected ')', expecting end
+app/controllers/movies_controller.rb:56: syntax error, unexpected end-of-input, expecting end
+app/controllers/movies_controller.rb:9: syntax error, unexpected ->, expecting end
+app/controllers/movies_controller.rb:9: syntax error, unexpected ')', expecting end
+app/controllers/movies_controller.rb:56: syntax error, unexpected end-of-input, expecting end
+Started GET "/movies" for ::1 at 2021-11-27 18:26:44 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms | Allocations: 5572)
+
+
+  
+NoMethodError (undefined method `json_response' for #<MoviesController:0x007ff0fa6e5508>):
+  
+app/controllers/movies_controller.rb:9:in `index'
+Started GET "/movies" for ::1 at 2021-11-27 18:28:03 -0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (55.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/concerns/response.rb:4:in `json_response'
+Completed 200 OK in 144ms (Views: 21.6ms | ActiveRecord: 85.5ms | Allocations: 7428)
+
+
+Started GET "/movies" for ::1 at 2021-11-27 18:31:30 -0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+  [1m[36mMovie Load (7.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (52.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 276ms (Views: 8.5ms | ActiveRecord: 135.9ms | Allocations: 13381)
+
+
+Started POST "/create_movie" for ::1 at 2021-11-27 18:35:31 -0300
+Processing by MoviesController#create as */*
+  Parameters: {"name"=>"el dorado", "movie"=>{"name"=>"el dorado"}}
+  [1m[36mTRANSACTION (42.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movies_controller.rb:23:in `create'
+  [1m[36mMovie Create (20.1ms)[0m  [1m[32mINSERT INTO "movies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "el dorado"], ["created_at", "2021-11-27 21:35:31.966717"], ["updated_at", "2021-11-27 21:35:31.966717"]]
+  ↳ app/controllers/movies_controller.rb:23:in `create'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movies_controller.rb:23:in `create'
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 67.9ms | Allocations: 5101)
+
+
+  
+ActionView::MissingTemplate (Missing template movies/show, application/show with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/app/views"
+  * "/Users/felipelois/.rvm/gems/ruby-2.6.3/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/felipelois/.rvm/gems/ruby-2.6.3/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/movies_controller.rb:24:in `create'
+Started GET "/" for ::1 at 2021-11-27 18:49:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 222.4ms | Allocations: 11961)
+Completed 200 OK in 244ms (Views: 232.5ms | Allocations: 13186)
+
+
+Started GET "/movies" for ::1 at 2021-11-27 18:49:44 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (6.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (2.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (6.9ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (2.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (3.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 567ms (Views: 4.5ms | ActiveRecord: 55.5ms | Allocations: 9146)
+
+
+Started GET "/" for ::1 at 2021-11-27 18:52:32 -0300
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 228)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: a63b49b4e2489c0a2814
+Version: webpack 4.46.0
+Time: 20477ms
+Built at: 11/27/2021 6:52:57 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-01c74563558c333258f2.js   4.87 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-01c74563558c333258f2.js.map   3.94 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-01c74563558c333258f2.js js/hello_react-01c74563558c333258f2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 849 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25113.4ms | Allocations: 13601)
+Completed 200 OK in 25158ms (Views: 25123.7ms | ActiveRecord: 0.0ms | Allocations: 16375)
+
+
+Started GET "/movies" for ::1 at 2021-11-27 18:53:01 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (10.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (2.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (3.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.5ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.7ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 140ms (Views: 3.0ms | ActiveRecord: 95.5ms | Allocations: 10404)
+
+

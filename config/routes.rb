@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   post 'create_user', to: 'users#create'
   post 'create_movie', to: 'movies#create'
   post 'create_reservation', to: 'reservation#create'
+  get 'movies', to: 'movie#index'
   get 'all_theaters', to: 'theater#index'
   get 'all_schedules', to: 'schedules#seats'
 end

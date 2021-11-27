@@ -1,11 +1,12 @@
 class MoviesController < ApplicationController
+  include Response
   before_action :set_movie, only: %i[ show update destroy ]
 
   # GET /movies
   # GET /movies.json
   def index
     @movies = Movie.all
-    @movies.map{|movie| movie.get_all_info}
+    json_response(@movies.map{|movie| movie.get_all_info})
   end
 
   # GET /movies/1
