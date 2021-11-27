@@ -21,4 +21,5 @@ Rails.application.routes.draw do
   post 'create_movie', to: 'movies#create'
   post 'create_reservation', to: 'reservation#create'
   get 'all_theaters', to: 'theater#index'
+  get 'all_schedules', to: 'schedules#seats'
 end
