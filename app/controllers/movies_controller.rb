@@ -5,11 +5,13 @@ class MoviesController < ApplicationController
   # GET /movies.json
   def index
     @movies = Movie.all
+    @movies.map{|movie| movie.get_all_info}
   end
 
   # GET /movies/1
   # GET /movies/1.json
   def show
+    @movie.get_all_info
   end
 
   # POST /movies
