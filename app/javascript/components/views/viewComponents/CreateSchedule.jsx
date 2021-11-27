@@ -40,6 +40,15 @@ export default function CreateSchedule() {
         console.log('schedule', schedule)
         console.log('name', name)
         console.log('mail', mail)
+        const jsonValue = {name : movieName}
+        const requestOptions = {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(jsonValue),
+          };
+        fetch("/create_movie", requestOptions);
     }
     return (
         <Box sx={{ flexGrow: 1 }}>
