@@ -28285,3 +28285,73 @@ Processing by MoviesController#index as */*
 Completed 200 OK in 39ms (Views: 1.6ms | ActiveRecord: 13.5ms | Allocations: 8719)
 
 
+Started GET "/reservations/1" for ::1 at 2021-11-28 18:37:23 -0300
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReservationsController#show as */*
+  Parameters: {"date"=>"10/01/2020", "row"=>1, "seats"=>[[1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], "schedule_id"=>1, "user_name"=>"felipe", "user_email"=>"fplois@gmail.com", "id"=>"1", "reservation"=>{"date"=>"10/01/2020", "row"=>1, "seats"=>[[1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], "schedule_id"=>1}}
+  [1m[36mReservation Load (26.0ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:55:in `set_reservation'
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "fplois@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 223ms (ActiveRecord: 135.5ms | Allocations: 13238)
+
+
+  
+NoMethodError (undefined method `json_response' for #<ReservationsController:0x007f91af238410>):
+  
+app/controllers/reservations_controller.rb:15:in `show'
+Started GET "/reservations/1" for ::1 at 2021-11-28 18:38:04 -0300
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mReservation Load (3.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:55:in `set_reservation'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 4.1ms | Allocations: 2506)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/reservations_controller.rb:14:in `show'
+Started GET "/reservations/1" for ::1 at 2021-11-28 18:39:46 -0300
+Processing by ReservationsController#show as */*
+  Parameters: {"user_email"=>"fplois@uc.cl", "id"=>"1", "reservation"=>{}}
+  [1m[36mReservation Load (2.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:55:in `set_reservation'
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "fplois@uc.cl"], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 4.6ms | Allocations: 3712)
+
+
+  
+NoMethodError (undefined method `json_response' for #<ReservationsController:0x007f91b3327c00>):
+  
+app/controllers/reservations_controller.rb:15:in `show'
+Started GET "/reservations/1" for ::1 at 2021-11-28 18:40:07 -0300
+Processing by ReservationsController#show as */*
+  Parameters: {"user_email"=>"fplois@uc.cl", "id"=>"1", "reservation"=>{}}
+  [1m[36mReservation Load (12.0ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:55:in `set_reservation'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "fplois@uc.cl"], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 13.6ms | Allocations: 3727)
+
+
+  
+NoMethodError (undefined method `json_response' for #<ReservationsController:0x007f91b32f5a48>):
+  
+app/controllers/reservations_controller.rb:15:in `show'
+Started GET "/reservations" for ::1 at 2021-11-28 18:41:02 -0300
+Processing by ReservationsController#index as */*
+  Parameters: {"user_email"=>"fplois@uc.cl", "reservation"=>{}}
+  Rendering reservations/index.json.jbuilder
+  [1m[36mReservation Exists? (2.9ms)[0m  [1m[34mSELECT 1 AS one FROM "reservations" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/reservations/index.json.jbuilder:1
+  [1m[36mReservation Load (1.5ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.json.jbuilder:1
+  Rendered collection of reservations/_reservation.json.jbuilder [2 times] (Duration: 5.4ms | Allocations: 423)
+  Rendered reservations/index.json.jbuilder (Duration: 51.6ms | Allocations: 2815)
+Completed 200 OK in 78ms (Views: 60.8ms | ActiveRecord: 4.3ms | Allocations: 4433)
+
+

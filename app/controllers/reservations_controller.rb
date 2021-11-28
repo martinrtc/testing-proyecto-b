@@ -1,4 +1,5 @@
 class ReservationsController < ApplicationController
+  include Response
   before_action :set_reservation, only: %i[ show update destroy ]
 
   # GET /reservations
@@ -10,6 +11,9 @@ class ReservationsController < ApplicationController
   # GET /reservations/1
   # GET /reservations/1.json
   def show
+    @user = User.find_by(email: params[:user_email])
+    @reservation = Reservation.where(user_id: @user.id)
+    json_response(@reservation)
   end
 
   # POST /reservations
