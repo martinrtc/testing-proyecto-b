@@ -8,9 +8,11 @@
 }
 
 .seats {
-  margin-left: 23.5%;
+  margin-left: 20em;
 }
 
-.firstField {
-  margin-right: 1em;
+.Fields {
+  margin-top: 3em;
+  text-align: center;
+  margin-bottom: 5em;
 }
