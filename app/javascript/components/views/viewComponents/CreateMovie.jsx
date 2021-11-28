@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Typography, TextField, Button } from '@mui/material'
 
-
-
 export default function CreateMovie() {
     const [movieName, setMovieName] = useState('')
     const [movieImage, setMovieImage] = useState('')
@@ -13,13 +11,21 @@ export default function CreateMovie() {
 
     const handleMovieImage = (event) => {
         setMovieImage(event.target.value);
-
     };
 
     const createMovie = () => {
         console.log('movie name', movieName)
         console.log('movie url', movieImage)
-    }
+        const jsonValue = {name : movieName, url : movieImage}
+        const requestOptions = {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(jsonValue),
+          };
+        fetch("/create_movie", requestOptions);
+    };
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Typography>Crear película</Typography>
@@ -41,7 +47,7 @@ export default function CreateMovie() {
                 helperText="Url de la imagen"
                 size="small"
             />
-            <Button variant="contained" onClick={() => createMovie()}>Crear película</Button>
+            <Button variant="contained" type="submit" onClick={() => createMovie()}>Crear película</Button>
         </Box>
     );
 }

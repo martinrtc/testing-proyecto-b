@@ -1,4 +1,5 @@
 class ReservationsController < ApplicationController
+  include Response
   before_action :set_reservation, only: %i[ show update destroy ]
 
   # GET /reservations
@@ -10,13 +11,22 @@ class ReservationsController < ApplicationController
   # GET /reservations/1
   # GET /reservations/1.json
   def show
+    @user = User.find_by(email: params[:user_email])
+    @reservation = Reservation.where(user_id: @user.id)
+    json_response(@reservation)
   end
 
   # POST /reservations
   # POST /reservations.json
   def create
-    @reservation = Reservation.new(reservation_params)
-
+    user = User.get_or_create(params[:user_email], params[:user_name])
+    @reservation = Reservation.new(
+      date: params[:date],
+      row: params[:row],
+      schedule_id: params[:schedule_id],
+      seats: params[:seats],
+      user_id: user.id,
+    )
     if @reservation.save
       render :show, status: :created, location: @reservation
     else
@@ -48,6 +58,6 @@ class ReservationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def reservation_params
-      params.require(:reservation).permit(:date, :row, :seats, :user_id, :movie_id, :schedule_id)
+      params.require(:reservation).permit(:date, :row, :user_email, :user_name, :schedule_id, :seats => [])
     end
 end
