@@ -21,7 +21,6 @@ export default function Functions() {
             return response.json();
         })
         .then((data) => {
-            console.log("DATA", data);
             setMovies(data);
           })
     }, []);

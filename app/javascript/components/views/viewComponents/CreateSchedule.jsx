@@ -6,25 +6,15 @@ import { Box, Typography, TextField, MenuItem, Button } from '@mui/material'
 export default function CreateSchedule() {
     // const movies = [{name: 'Avatar', id: 1},{name: 'Gladiator', id: 2},{name: 'Toy Story', id: 3}]
     const theaters = ['Sala 1', 'Sala 2', 'Sala 3', 'Sala 4', 'Sala 5', 'Sala 6', 'Sala 7', 'Sala 8']
-    const schedules = ['matine', 'tanda', 'noche']
-    const [movies, setMovies] = useState()
-    const [movie, setMovie] = useState()
-    const [theater, setTheater] = useState()
-    const [schedule, setSchedule] = useState()
-    const [name, setName] = useState()
-    const [mail, setMail] = useState()
+    const schedules = ['Matine', 'Tanda', 'Noche']
+    const [movies, setMovies] = useState();
+    const [movie, setMovie] = useState();
+    const [theater, setTheater] = useState();
+    const [schedule, setSchedule] = useState();
 
 
     const handleMovie = (event) => {
         setMovie(event.target.value);
-    };
-
-    const handleName = (event) => {
-        setName(event.target.value);
-    };
-
-    const handleMail = (event) => {
-        setMail(event.target.value);
     };
 
     const handleTheater = (event) => {
@@ -36,11 +26,6 @@ export default function CreateSchedule() {
     };
 
     const createFunction = () => {
-        console.log('movie', movie)
-        console.log('theater', theater)
-        console.log('schedule', schedule)
-        console.log('name', name)
-        console.log('mail', mail)
         const jsonValue = {hour: schedule, movie_id: movie, theater_id: theater}
         const requestOptions = {
             method: 'POST',
@@ -119,24 +104,6 @@ export default function CreateSchedule() {
                     </MenuItem>
                 ))}
             </TextField>
-            <TextField
-                required
-                id="outlined-name"
-                label="Nombre"
-                value={name}
-                onChange={handleName}
-                helperText="Eliga el nombre de quien hace la reserva"
-                size="small"
-            />
-            <TextField
-                required
-                id="outlined-mail"
-                label="Mail"
-                value={mail}
-                onChange={handleMail}
-                helperText="Mail de la reserva"
-                size="small"
-            />
             <Button variant="contained" onClick={() => createFunction()}>Crear función</Button>
         </Box>
     );
