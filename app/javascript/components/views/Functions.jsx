@@ -20,6 +20,7 @@ export default function Functions() {
             return response.json();
         })
         .then((data) => {
+            console.log("===========>", data);
             setMovies(data);
           })
     }, []);

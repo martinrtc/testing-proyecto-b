@@ -34,7 +34,7 @@ export default function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={NavbarTabPanel}/>
-          <Route exact path="/DetailFunction" component={DetailFunction}/>
+          <Route exact path="/DetailFunction/:id" component={DetailFunction}/>
         </Switch>
       </BrowserRouter>
     </div>

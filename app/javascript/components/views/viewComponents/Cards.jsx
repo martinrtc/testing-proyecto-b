@@ -23,20 +23,20 @@ export default function MovieCard({id, name, url}) {
       </CardContent>
       <CardActions>
         MATINE:
-        <Link to={`/DetailFunction/`}>Sala 1</Link>
-        <Link to="/DetailFunction">Sala 2</Link>
-        <Link to="/DetailFunction">Sala 3</Link>
-        <Link to="/DetailFunction">Sala 4</Link>
+        <Link to={`/DetailFunction/${id}`}>Sala 1</Link>
+        <Link to={`/DetailFunction/${id}`}>Sala 2</Link>
+        <Link to={`/DetailFunction/${id}`}>Sala 3</Link>
+        <Link to={`/DetailFunction/${id}`}>Sala 4</Link>
       </CardActions>
       <CardActions>
         TANDA:
-        <Link to="/DetailFunction">Sala 1</Link>
-        <Link to="/DetailFunction">Sala 2</Link>
-        <Link to="/DetailFunction">Sala 3</Link>
+        <Link to={`/DetailFunction/${id}`}>Sala 1</Link>
+        <Link to={`/DetailFunction/${id}`}>Sala 2</Link>
+        <Link to={`/DetailFunction/${id}`}>Sala 3</Link>
       </CardActions>
       <CardActions>
         NOCHE:
-        <Link to="/DetailFunction">Sala 4</Link>
+        <Link to={`/DetailFunction/${id}`}>Sala 4</Link>
       </CardActions>
     </Card>
   );

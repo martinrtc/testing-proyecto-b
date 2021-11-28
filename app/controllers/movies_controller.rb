@@ -12,7 +12,7 @@ class MoviesController < ApplicationController
   # GET /movies/1
   # GET /movies/1.json
   def show
-    @movie.get_all_info
+    json_response(@movie.get_all_info)
   end
 
   # POST /movies
