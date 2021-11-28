@@ -4,22 +4,10 @@ import { Box, Typography, TextField, MenuItem, Button } from '@mui/material'
 
 
 export default function CreateSchedule() {
-    const getDB = () => {
-        const requestOptions = {
-            method: 'GET',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          };
-        fetch("/movie", requestOptions).then((response) => {
-            console.log(response.json());
-            return response.json();
-        });
-    };
-    
-    const movies = [{name: 'Avatar', id: 1},{name: 'Gladiator', id: 2},{name: 'Toy Story', id: 3}]
+    // const movies = [{name: 'Avatar', id: 1},{name: 'Gladiator', id: 2},{name: 'Toy Story', id: 3}]
     const theaters = ['Sala 1', 'Sala 2', 'Sala 3', 'Sala 4', 'Sala 5', 'Sala 6', 'Sala 7', 'Sala 8']
     const schedules = ['matine', 'tanda', 'noche']
+    const [movies, setMovies] = useState()
     const [movie, setMovie] = useState()
     const [theater, setTheater] = useState()
     const [schedule, setSchedule] = useState()
@@ -53,7 +41,7 @@ export default function CreateSchedule() {
         console.log('schedule', schedule)
         console.log('name', name)
         console.log('mail', mail)
-        const jsonValue = {name : movieName}
+        const jsonValue = {hour: schedule, movie_id: movie, theater_id: theater}
         const requestOptions = {
             method: 'POST',
             headers: {
@@ -61,7 +49,7 @@ export default function CreateSchedule() {
             },
             body: JSON.stringify(jsonValue),
           };
-        fetch("/create_movie", requestOptions);
+        fetch('/create_schedule', requestOptions);
     }
 
     useEffect(() => {
@@ -73,11 +61,13 @@ export default function CreateSchedule() {
           };
         fetch("/movies", requestOptions)
           .then((response) => {
-            console.log("Hasta aqui piola");
-            console.log("--->", response.json());
-            // return response.json();
-        });
-      });
+            return response.json();
+        })
+        .then((data) => {
+            console.log("DATA", data);
+            setMovies(data);
+          })
+      }, []);
 
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -91,11 +81,13 @@ export default function CreateSchedule() {
                 helperText="Eliga la película"
                 size="small"
             >
-                {movies.map((option) => (
-                    <MenuItem key={option.id} value={option.id}>
-                        {option.name}
+                {movies != null ? 
+                movies.map((option) => (
+                    <MenuItem key={option.movie.id} value={option.movie.id}>
+                        {option.movie.name}
                     </MenuItem>
-                ))}
+                ))
+                : (<div/>)}
             </TextField>
             <TextField
                 id="outlined-select-theater"
@@ -107,7 +99,7 @@ export default function CreateSchedule() {
                 size="small"
             >
                 {theaters.map((option) => (
-                    <MenuItem key={option} value={option}>
+                    <MenuItem key={option} value={theaters.indexOf(option)}>
                         {option}
                     </MenuItem>
                 ))}

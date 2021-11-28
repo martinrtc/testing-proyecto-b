@@ -23,16 +23,18 @@ const handleReservation = (rowIndex, seatIndex) => {
 export default function Reservation() {
     const list = [[1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            {list.map((row, rowIndex) => 
-                <List>
-                    <ListItem>
-                    {row.map((seat, seatIndex) =>
-                        seat === 0 ? <Button onClick={() => handleReservation(rowIndex, seatIndex)} variant="contained"></Button> : <Button variant="contained" disabled></Button>
-                    )}
-                    </ListItem>
-                </List>
-            )}
-        </Box>
+        <div className="seats">
+            <Box sx={{ flexGrow: 1 }}>
+                {list.map((row, rowIndex) => 
+                    <List>
+                        <ListItem>
+                        {row.map((seat, seatIndex) =>
+                            seat === 0 ? <Button onClick={() => handleReservation(rowIndex, seatIndex)} variant="contained">{seatIndex + 1}</Button> : <Button variant="contained" disabled>{seatIndex + 1}</Button>
+                        )}
+                        </ListItem>
+                    </List>
+                )}
+            </Box>
+        </div>
     );
 }

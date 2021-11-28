@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   # donde el url seria localhost:3000/create_user y se le envia la info pa crear el usuario llamando al controlador de users al metodo create
   post 'create_user', to: 'users#create'
   post 'create_movie', to: 'movies#create'
+  post 'create_schedule', to: 'schedules#create'
   post 'create_reservation', to: 'reservation#create'
   get 'movies', to: 'movie#index'
   get 'all_theaters', to: 'theater#index'
