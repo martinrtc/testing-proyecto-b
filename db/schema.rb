@@ -26,7 +26,8 @@ ActiveRecord::Schema.define(version: 2021_11_26_161752) do
     t.datetime "date"
     t.integer "row"
     t.integer "seats", array: true
-    t.bigint "user_id", null: false
+    t.string "name"
+    t.string "email"
     t.bigint "schedule_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Reservation from './viewComponents/Reservation'
 import MovieCard from './viewComponents/Cards';
 import { Box } from '@mui/material';
 import functions from '../../styles/style'
