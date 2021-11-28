@@ -12,6 +12,11 @@ class SchedulesController < ApplicationController
   def show
   end
 
+  # GET /schedules/1/seats
+  def seats
+    {name: true}
+  end
+
   # POST /schedules
   # POST /schedules.json
   def create

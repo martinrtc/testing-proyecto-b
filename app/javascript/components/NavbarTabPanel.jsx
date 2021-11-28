@@ -64,7 +64,8 @@ export default function BasicTabs() {
                             }
                         }}>
                         <Tab label={<b className={value === 0 ? classes.selected : classes.nonSelected}>Funciones</b>} />
-                        <Tab label={<b className={value === 1 ? classes.selected : classes.nonSelected}>Películas</b>} />     
+                        <Tab label={<b className={value === 1 ? classes.selected : classes.nonSelected}>Películas</b>} />
+                        <Tab label={<b className={value === 2 ? classes.selected : classes.nonSelected}>Mis Reservas</b>} />     
                     </Tabs>
                 </Box>
                     <NavbarTabPanel value={value} index={0}>
