@@ -1,12 +1,55 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import Reservation from './viewComponents/Reservation';
-import { Typography } from '@mui/material';
-import CardMedia from '@mui/material/CardMedia';
+import { Box, Typography, TextField, Button } from '@mui/material';
 
-class DetailFunction extends React.Component {
-  render() {
+export default function DetailFunction() {
+  const [name, setName] = useState()
+  const [mail, setMail] = useState()
+  const handleName = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleMail = (event) => {
+    setMail(event.target.value);
+  };
+
+  const createReservation = () => {
+      console.log('name', name)
+      console.log('mail', mail)
+      const jsonValue = {hour: schedule, movie_id: movie, theater_id: theater}
+      const requestOptions = {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(jsonValue),
+        };
+      fetch('/create_schedule', requestOptions);
+  }
     return (
       <div>
+        <Typography gutterBottom variant="h4" component="div" align="center">
+          Información para Reservar
+        </Typography>
+        <TextField
+            required
+            id="outlined-name"
+            label="Nombre"
+            value={name}
+            onChange={handleName}
+            helperText="Eliga el nombre de quien hace la reserva"
+            size="small"
+        />
+        <TextField
+            required
+            id="outlined-mail"
+            label="Mail"
+            value={mail}
+            onChange={handleMail}
+            helperText="Mail de la reserva"
+            size="small"
+        />
+        <Button variant="contained" onClick={() => createReservation()}>Crear función</Button>
         <Typography gutterBottom variant="h4" component="div" align="center">
           Reserva de asientos
         </Typography>
@@ -16,7 +59,4 @@ class DetailFunction extends React.Component {
         <Reservation />
       </div>
     )
-  }
-}
-
-export default DetailFunction
+};

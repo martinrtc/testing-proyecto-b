@@ -16,7 +16,7 @@ export default function CreateMovie() {
     const createMovie = () => {
         console.log('movie name', movieName)
         console.log('movie url', movieImage)
-        const jsonValue = {name : movieName}
+        const jsonValue = {name : movieName, url : movieImage}
         const requestOptions = {
             method: 'POST',
             headers: {

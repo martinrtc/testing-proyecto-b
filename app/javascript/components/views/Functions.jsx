@@ -32,7 +32,7 @@ export default function Functions() {
             {movies != null ? 
                 movies.map((movie) => (
                     <div className="cardStyle">
-                      <MovieCard url="https://as.com/meristation/imagenes/2021/01/25/noticias/1611576361_977797_1611576540_sumario_grande.jpg" name={movie.movie.name}/>
+                      <MovieCard id={movie.movie.id} url={movie.movie.url} name={movie.movie.name}/>
                     </div>
                     ))
                     : (<div/>)}

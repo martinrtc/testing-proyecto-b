@@ -15,13 +15,14 @@ const muiClassStyles = makeStyles(() => ({
     }
 }));
 
-const handleReservation = (rowIndex, seatIndex) => {
-    console.log('rowIndex', rowIndex)
-    console.log('seatIndex', seatIndex)
-}
-
 export default function Reservation() {
     const list = [[1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+    
+    const handleReservation = (rowIndex, seatIndex) => {
+        console.log('rowIndex', rowIndex)
+        console.log('seatIndex', seatIndex)
+    }
+
     return (
         <div className="seats">
             <Box sx={{ flexGrow: 1 }}>
