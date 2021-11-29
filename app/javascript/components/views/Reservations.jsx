@@ -20,7 +20,6 @@ export default function Reservations() {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify(jsonValue),
           };
         fetch('/reservations/show', requestOptions)
           .then((response) => {

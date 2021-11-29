@@ -12,9 +12,15 @@ class ReservationsController < ApplicationController
   # GET /reservations/1
   # GET /reservations/1.json
   def show
-    puts(params[:user_email])
+    json_response(@reservation)
+  end
+
+  # POST /reservation/user
+  def user_reservations
     @user = User.find_by(email: params[:user_email])
-    @reservation = Reservation.where(user_id: @user.id)
+    now = Time.now.strftime("%Y/%m/%d")
+    puts now
+    @reservation = Reservation.where("user_id = ? AND date >= ?", @user.id, now)
     json_response(@reservation)
   end
 
@@ -29,10 +35,15 @@ class ReservationsController < ApplicationController
       seats: params[:seats],
       user_id: user.id,
     )
-    if @reservation.save
-      render status: :created, location: @reservation
-    else
-      render json: @reservation.errors, status: :unprocessable_entity
+    begin
+      Reservation.check_seats(params[:schedule_id], params[:date], params[:row], params[:seats])
+      if @reservation.save
+        render :show, status: :created, location: @reservation
+      else
+        render json: @reservation.errors, status: :unprocessable_entity
+      end
+    rescue => exception
+      json_response({}, 403)
     end
   end
 

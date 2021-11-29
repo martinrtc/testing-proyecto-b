@@ -1,5 +1,6 @@
 class TheatersController < ApplicationController
-  before_action :set_theater, only: %i[ show update destroy ]
+  include Response
+  before_action :set_theater, only: %i[ update destroy ]
 
   # GET /theaters
   # GET /theaters.json
@@ -10,6 +11,7 @@ class TheatersController < ApplicationController
   # GET /theaters/1
   # GET /theaters/1.json
   def show
+    json_response(Reservation.used_seats(params[:id], params[:date]))
   end
 
   # POST /theaters
@@ -48,6 +50,6 @@ class TheatersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def theater_params
-      params.fetch(:theater, {})
+      params.require(:theater).permit(:id, :date)
     end
 end
