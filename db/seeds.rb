@@ -33,9 +33,9 @@ users = User.create([
 ])
 
 schedules = Schedule.create([
-    {hour: "Matine", movie_id: 1, theater_id: 1},
-    {hour: "Matine", movie_id: 1, theater_id: 2},
-    {hour: "Tanda", movie_id: 1, theater_id: 1},
-    {hour: "Matine", movie_id: 2, theater_id: 1},
-    {hour: "Noche", movie_id: 3, theater_id: 5}
+    {hour: "matine", movie_id: 1, theater_id: 1},
+    {hour: "matine", movie_id: 1, theater_id: 2},
+    {hour: "tanda", movie_id: 1, theater_id: 1},
+    {hour: "matine", movie_id: 2, theater_id: 1},
+    {hour: "nigth", movie_id: 3, theater_id: 5}
 ])
