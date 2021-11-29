@@ -1,6 +1,6 @@
 class ReservationsController < ApplicationController
   include Response
-  before_action :set_reservation, only: %i[ show update destroy ]
+  before_action :set_reservation, only: %i[ update destroy ]
 
   # GET /reservations
   # GET /reservations.json

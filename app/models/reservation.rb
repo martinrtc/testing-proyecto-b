@@ -5,7 +5,8 @@ class Reservation < ApplicationRecord
   belongs_to :schedule
 
   def self.used_seats(schedule_id, date)
-    reservations = Reservation.where(schedule_id: schedule_id, date: date)
+    puts(date)
+    reservations = Reservation.where(schedule_id: schedule_id, date: date.to_datetime)
     seats = (0..3).map{|x| (0..11).map{|y| 0}}
     
     reservations.each do |reservation|

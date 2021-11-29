@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import { makeStyles } from '@mui/styles';
 import Movies from './views/Movies';
 import Functions from './views/Functions';
+import Reservations from './views/Reservations';
 
 function NavbarTabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -73,6 +74,9 @@ export default function BasicTabs() {
                     </NavbarTabPanel>
                     <NavbarTabPanel value={value} index={1}>
                         <Movies />
+                    </NavbarTabPanel>
+                    <NavbarTabPanel value={value} index={2}>
+                        <Reservations />
                     </NavbarTabPanel>
                 </Box>
         </div>
