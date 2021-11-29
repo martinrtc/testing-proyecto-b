@@ -34356,3 +34356,139 @@ Completed 500 Internal Server Error in 23ms (ActiveRecord: 4.3ms | Allocations: 
 NoMethodError (undefined method `id' for nil:NilClass):
   
 app/controllers/reservations_controller.rb:16:in `show'
+Started GET "/reservations/(felipe@uc.cl)" for ::1 at 2021-11-29 00:58:08 -0300
+  [1m[35m (10.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"(felipe@uc"}
+  [1m[36mUser Load (42.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:15:in `show'
+Completed 500 Internal Server Error in 167ms (ActiveRecord: 93.8ms | Allocations: 6756)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/reservations_controller.rb:16:in `show'
+Started GET "/reservations/felipe@uc.cl" for ::1 at 2021-11-29 00:58:27 -0300
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"felipe@uc"}
+  [1m[36mUser Load (48.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:15:in `show'
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 48.5ms | Allocations: 1979)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/reservations_controller.rb:16:in `show'
+Started GET "/reservations/felipe@uc.cl" for ::1 at 2021-11-29 01:01:09 -0300
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"felipe@uc"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:16:in `show'
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 7.2ms | Allocations: 6754)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/reservations_controller.rb:17:in `show'
+Started GET "/reservations/felipe@uc.cl" for ::1 at 2021-11-29 01:02:29 -0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"felipe@uc"}
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "felipe@uc.cl"], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:16:in `show'
+  [1m[36mReservation Load (2.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/concerns/response.rb:4:in `json_response'
+Completed 200 OK in 180ms (Views: 17.1ms | ActiveRecord: 65.5ms | Allocations: 14308)
+
+
+Started GET "/reservations/felipe@uc.cl" for ::1 at 2021-11-29 01:03:32 -0300
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"felipe@uc"}
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "felipe@uc.cl"], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:16:in `show'
+  [1m[36mReservation Load (39.6ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/concerns/response.rb:4:in `json_response'
+Completed 200 OK in 116ms (Views: 18.4ms | ActiveRecord: 44.4ms | Allocations: 1885)
+
+
+Started GET "/reservations/felipe.@uc.cl" for ::1 at 2021-11-29 01:03:36 -0300
+Processing by PagesController#index as */*
+  Parameters: {"path"=>"reservations/felipe.@uc"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 36.2ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 442.2ms | Allocations: 12118)
+Completed 200 OK in 581ms (Views: 542.0ms | ActiveRecord: 0.0ms | Allocations: 13974)
+
+
+Started GET "/reservations/felipe@uc.cl" for ::1 at 2021-11-29 01:03:46 -0300
+Processing by ReservationsController#show as */*
+  Parameters: {"id"=>"felipe@uc"}
+  [1m[36mUser Load (90.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "felipe@uc.cl"], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:16:in `show'
+  [1m[36mReservation Load (1.8ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/concerns/response.rb:4:in `json_response'
+Completed 200 OK in 148ms (Views: 2.6ms | ActiveRecord: 92.3ms | Allocations: 1886)
+
+
+Started GET "/" for ::1 at 2021-11-29 01:05:45 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 220.3ms | Allocations: 7293)
+Completed 200 OK in 329ms (Views: 280.4ms | ActiveRecord: 0.0ms | Allocations: 7759)
+
+
+Started GET "/movies" for ::1 at 2021-11-29 01:05:49 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (209.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (3.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (2.5ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (4.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (3.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (3.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.8ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (5.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (3.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (16.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 437ms (Views: 2.9ms | ActiveRecord: 431.0ms | Allocations: 47877)
+
+
+Started GET "/" for ::1 at 2021-11-29 01:06:25 -0300
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 228)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47288.0ms | Allocations: 13895)
+Completed 200 OK in 47334ms (Views: 47300.4ms | ActiveRecord: 0.0ms | Allocations: 16668)
+
+

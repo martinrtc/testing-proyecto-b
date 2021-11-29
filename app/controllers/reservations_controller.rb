@@ -11,8 +11,7 @@ class ReservationsController < ApplicationController
   # GET /reservations/1
   # GET /reservations/1.json
   def show
-    puts(params[:user_email])
-    @user = User.find_by(email: params[:user_email])
+    @user = User.find_by(email: params[:id]+ '.' + params[:format])
     @reservation = Reservation.where(user_id: @user.id)
     json_response(@reservation)
   end
