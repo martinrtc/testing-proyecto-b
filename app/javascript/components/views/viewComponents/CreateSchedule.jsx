@@ -6,7 +6,7 @@ import { Box, Typography, TextField, MenuItem, Button } from '@mui/material'
 export default function CreateSchedule() {
     // const movies = [{name: 'Avatar', id: 1},{name: 'Gladiator', id: 2},{name: 'Toy Story', id: 3}]
     const theaters = ['Sala 1', 'Sala 2', 'Sala 3', 'Sala 4', 'Sala 5', 'Sala 6', 'Sala 7', 'Sala 8']
-    const schedules = ['Matine', 'Tanda', 'Noche']
+    const schedules = ['matine', 'tanda', 'nigth']
     const [movies, setMovies] = useState();
     const [movie, setMovie] = useState();
     const [theater, setTheater] = useState();

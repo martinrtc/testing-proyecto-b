@@ -1,4 +1,5 @@
 class SchedulesController < ApplicationController
+  include Response
   before_action :set_schedule, only: %i[ show update destroy ]
 
   # GET /schedules
@@ -10,6 +11,7 @@ class SchedulesController < ApplicationController
   # GET /schedules/1
   # GET /schedules/1.json
   def show
+    json_response(@schedule)
   end
 
   # GET /schedules/1/seats
