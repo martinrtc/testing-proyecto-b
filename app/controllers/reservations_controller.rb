@@ -6,6 +6,7 @@ class ReservationsController < ApplicationController
   # GET /reservations.json
   def index
     @reservations = Reservation.all
+    render :nothing => true
   end
 
   # GET /reservations/1
@@ -28,7 +29,7 @@ class ReservationsController < ApplicationController
       user_id: user.id,
     )
     if @reservation.save
-      render :show, status: :created, location: @reservation
+      render status: :created, location: @reservation
     else
       render json: @reservation.errors, status: :unprocessable_entity
     end

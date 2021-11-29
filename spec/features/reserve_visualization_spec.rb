@@ -1,5 +1,9 @@
 require 'rails_helper'
 
-RSpec.feature "ReserveVisualizations", type: :feature do
-  pending "add some scenarios (or delete) #{__FILE__}"
+RSpec.feature "ReserveVisualizations", type: :request do
+  it 'returns all reservations' do
+    get '/reservations'
+
+    expect(response).to_have_http_status(:success)
+  end
 end
