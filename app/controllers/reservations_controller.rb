@@ -34,11 +34,15 @@ class ReservationsController < ApplicationController
       seats: params[:seats],
       user_id: user.id,
     )
-    Reservation.check_seats(params[:schedule_id], params[:date], params[:row], params[:seats])
-    if @reservation.save
-      render :show, status: :created, location: @reservation
-    else
-      render json: @reservation.errors, status: :unprocessable_entity
+    begin
+      Reservation.check_seats(params[:schedule_id], params[:date], params[:row], params[:seats])
+      if @reservation.save
+        render :show, status: :created, location: @reservation
+      else
+        render json: @reservation.errors, status: :unprocessable_entity
+      end
+    rescue => exception
+      json_response({}, 403)
     end
   end
 
