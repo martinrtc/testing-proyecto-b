@@ -13,22 +13,24 @@ export default function Reservations() {
         setMail(event.target.value);
     };
 
-    useEffect(() => {
+    const createMovie = () => {
+        const jsonValue = {user_email : mail}
         const requestOptions = {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
             },
+            body: JSON.stringify(jsonValue),
           };
-        // fetch("/movies", requestOptions)
-        //   .then((response) => {
-        //     return response.json();
-        // })
-        // .then((data) => {
-        //     console.log("===========>", data);
-        //     setMovies(data);
-        //   })
-    }, []);
+        fetch('/reservations/show', requestOptions)
+          .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            console.log("===========>", data);
+            setMovies(data);
+          })
+    };
     
     return (
         <div align="center">
@@ -47,6 +49,7 @@ export default function Reservations() {
                         />
                     </CardContent>
                 </Card>
+            <Button variant="contained" type="submit" onClick={() => createMovie()}>Crear película</Button>
             </div>
             {/* {movies != null ? 
                 movies.map((movie) => (
