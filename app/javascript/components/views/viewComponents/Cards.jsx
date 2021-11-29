@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 export default function MovieCard({id, name, url}) {
   return (
-    <Card sx={{ maxWidth: 400 }}>
+    <Card sx={{ maxWidth: 400 }} style={{backgroundColor: "rgb:(48, 48, 48)"}}>
       <CardMedia
         component="img"
         height="200"

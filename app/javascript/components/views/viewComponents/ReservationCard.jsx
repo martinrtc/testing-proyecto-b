@@ -14,6 +14,9 @@ export default function ReservationCard({date, row, seats, schedule_id}) {
         <Typography gutterBottom variant="h4" component="div" align="center">
           {name}
         </Typography>
+        <Typography variant="h5" component="div">
+          be{bull}nev{bull}o{bull}lent
+        </Typography>
       </CardContent>
     </Card>
   );

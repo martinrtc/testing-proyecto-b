@@ -28355,3 +28355,1150 @@ Processing by ReservationsController#index as */*
 Completed 200 OK in 78ms (Views: 60.8ms | ActiveRecord: 4.3ms | Allocations: 4433)
 
 
+Started GET "/" for ::1 at 2021-11-28 21:13:17 -0300
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 228)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-11-28 21:13:19 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: ff62f0d0d488c0494a50
+Version: webpack 4.46.0
+Time: 44471ms
+Built at: 11/28/2021 9:14:09 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-c26f5db7263bd36eb052.js   4.88 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-c26f5db7263bd36eb052.js.map   3.96 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-c26f5db7263bd36eb052.js js/hello_react-c26f5db7263bd36eb052.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./app/javascript/styles/style.css] 601 bytes {hello_react} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/styles/style.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/styles/style.css 923 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 850 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50731.6ms | Allocations: 8244)
+Completed 200 OK in 50748ms (Views: 50738.6ms | ActiveRecord: 0.0ms | Allocations: 11225)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:14:13 -0300
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: ff62f0d0d488c0494a50
+Version: webpack 4.46.0
+Time: 50151ms
+Built at: 11/28/2021 9:14:13 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-c26f5db7263bd36eb052.js   4.88 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-c26f5db7263bd36eb052.js.map   3.96 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-c26f5db7263bd36eb052.js js/hello_react-c26f5db7263bd36eb052.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./app/javascript/styles/style.css] 601 bytes {hello_react} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/styles/style.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/styles/style.css 923 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 850 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55936.0ms | Allocations: 42164)
+Completed 200 OK in 55993ms (Views: 55960.9ms | ActiveRecord: 0.0ms | Allocations: 47488)
+
+
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (16.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (4.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (3.5ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.7ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 459ms (Views: 1.9ms | ActiveRecord: 491.5ms | Allocations: 20540)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:16:29 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"user_email"=>"fplois@uc.cl", "movie"=>{}}
+  [1m[36mMovie Load (2.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (7.4ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (5.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (13.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 165ms (Views: 1.3ms | ActiveRecord: 35.8ms | Allocations: 8688)
+
+
+Started GET "/movies/1" for ::1 at 2021-11-28 21:18:10 -0300
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"1", "movie"=>{}}
+  [1m[36mMovie Load (8.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:49:in `set_movie'
+  [1m[36mSchedule Load (1.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.7ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (6.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+Completed 200 OK in 71ms (Views: 2.5ms | ActiveRecord: 17.4ms | Allocations: 3455)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:19:52 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (2.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (0.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (3.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (16.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 63ms (Views: 1.9ms | ActiveRecord: 30.7ms | Allocations: 8828)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:20:15 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (17.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (12.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (7.8ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.8ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (2.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 180ms (Views: 1.6ms | ActiveRecord: 47.8ms | Allocations: 8720)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:20:16 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (2.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (2.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (35.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (2.6ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (5.7ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (10.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (4.4ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (54.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (25.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 217ms (Views: 3.9ms | ActiveRecord: 145.0ms | Allocations: 8719)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:20:18 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (1.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (2.5ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.8ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (0.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (0.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (0.9ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.7ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 47ms (Views: 1.2ms | ActiveRecord: 14.5ms | Allocations: 8719)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:20:20 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (3.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (6.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (2.8ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (2.5ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (3.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 58ms (Views: 1.3ms | ActiveRecord: 24.7ms | Allocations: 8734)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:20:21 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (1.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.7ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (2.3ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.7ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (2.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (2.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 93ms (Views: 1.7ms | ActiveRecord: 18.0ms | Allocations: 8719)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:26:41 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (2.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (2.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.5ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (2.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (9.6ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 212ms (Views: 3.0ms | ActiveRecord: 52.1ms | Allocations: 11938)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:26:42 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (3.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (101.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (4.8ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.9ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.4ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (6.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 166ms (Views: 1.9ms | ActiveRecord: 125.2ms | Allocations: 8720)
+
+
+Started GET "/movies/1" for ::1 at 2021-11-28 21:26:46 -0300
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"1", "movie"=>{}}
+  [1m[36mMovie Load (1.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:49:in `set_movie'
+  [1m[36mSchedule Load (1.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (3.3ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (4.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+Completed 200 OK in 30ms (Views: 1.7ms | ActiveRecord: 10.5ms | Allocations: 3338)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:28:27 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (15.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (2.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.7ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (2.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.5ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 64ms (Views: 1.4ms | ActiveRecord: 28.3ms | Allocations: 8719)
+
+
+Started GET "/movies/1" for ::1 at 2021-11-28 21:28:38 -0300
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"1", "movie"=>{}}
+  [1m[36mMovie Load (9.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:49:in `set_movie'
+  [1m[36mSchedule Load (49.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.7ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+Completed 200 OK in 99ms (Views: 1.8ms | ActiveRecord: 62.6ms | Allocations: 4015)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:28:38 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (1.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (3.7ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (4.5ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.4ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.7ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 55ms (Views: 1.3ms | ActiveRecord: 18.9ms | Allocations: 8721)
+
+
+Started GET "/movies/1" for ::1 at 2021-11-28 21:28:41 -0300
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"1", "movie"=>{}}
+  [1m[36mMovie Load (1.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:49:in `set_movie'
+  [1m[36mSchedule Load (3.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (3.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (5.5ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+Completed 200 OK in 41ms (Views: 0.5ms | ActiveRecord: 13.1ms | Allocations: 3334)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:28:42 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (2.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (2.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (0.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 52ms (Views: 1.4ms | ActiveRecord: 13.4ms | Allocations: 8803)
+
+
+Started GET "/movies/1" for ::1 at 2021-11-28 21:28:44 -0300
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"1", "movie"=>{}}
+  [1m[36mMovie Load (4.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:49:in `set_movie'
+  [1m[36mSchedule Load (2.5ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+Completed 200 OK in 35ms (Views: 0.7ms | ActiveRecord: 9.2ms | Allocations: 3333)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:28:46 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (1.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (4.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (2.3ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (2.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 53ms (Views: 1.1ms | ActiveRecord: 18.1ms | Allocations: 8859)
+
+
+Started GET "/movies/1" for ::1 at 2021-11-28 21:28:50 -0300
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"1", "movie"=>{}}
+  [1m[36mMovie Load (3.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:49:in `set_movie'
+  [1m[36mSchedule Load (3.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (4.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.5ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+Completed 200 OK in 25ms (Views: 1.1ms | ActiveRecord: 11.6ms | Allocations: 3333)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:28:56 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (1.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (1.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (2.7ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.4ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (3.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 48ms (Views: 1.2ms | ActiveRecord: 16.6ms | Allocations: 8859)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:29:21 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (1.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (1.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (5.3ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.7ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (2.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (0.9ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (0.9ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 47ms (Views: 1.2ms | ActiveRecord: 18.6ms | Allocations: 8723)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:29:22 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (1.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (0.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (3.8ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (3.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 42ms (Views: 1.3ms | ActiveRecord: 16.1ms | Allocations: 8719)
+
+
+Started GET "/movies/1" for ::1 at 2021-11-28 21:29:23 -0300
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"1", "movie"=>{}}
+  [1m[36mMovie Load (1.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:49:in `set_movie'
+  [1m[36mSchedule Load (1.5ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (3.8ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (2.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+Completed 200 OK in 21ms (Views: 0.7ms | ActiveRecord: 8.9ms | Allocations: 3333)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:29:53 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (3.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (2.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (0.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.4ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (0.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (0.9ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (0.9ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 36ms (Views: 0.9ms | ActiveRecord: 14.0ms | Allocations: 8856)
+
+
+Started GET "/movies/1" for ::1 at 2021-11-28 21:30:01 -0300
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"1", "movie"=>{}}
+  [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:49:in `set_movie'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (2.3ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (2.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+Completed 200 OK in 19ms (Views: 0.8ms | ActiveRecord: 6.7ms | Allocations: 3333)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:31:52 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (2.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (1.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.7ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 64ms (Views: 5.1ms | ActiveRecord: 13.3ms | Allocations: 8815)
+
+
+Started GET "/" for ::1 at 2021-11-28 21:36:10 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 9e958d1241f5af3e9d99
+Version: webpack 4.46.0
+Time: 21350ms
+Built at: 11/28/2021 9:36:41 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-3f9fd0e6d140dc2618cc.js   4.88 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-3f9fd0e6d140dc2618cc.js.map   3.96 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-3f9fd0e6d140dc2618cc.js js/hello_react-3f9fd0e6d140dc2618cc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./app/javascript/styles/style.css] 601 bytes {hello_react} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/styles/style.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/styles/style.css 923 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 851 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30375.6ms | Allocations: 8911)
+Completed 200 OK in 30395ms (Views: 30382.5ms | ActiveRecord: 0.0ms | Allocations: 9274)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:36:42 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (2.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (1.7ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (2.7ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (8.4ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (2.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (11.4ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (2.5ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (8.5ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.7ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 108ms (Views: 4.0ms | ActiveRecord: 43.6ms | Allocations: 9401)
+
+
+Started GET "/" for ::1 at 2021-11-28 21:41:25 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 3a1f8295302158c3b723
+Version: webpack 4.46.0
+Time: 16706ms
+Built at: 11/28/2021 9:41:46 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-4be907e0edd45c52c085.js   4.89 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-4be907e0edd45c52c085.js.map   3.96 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-4be907e0edd45c52c085.js js/hello_react-4be907e0edd45c52c085.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./app/javascript/styles/style.css] 601 bytes {hello_react} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/styles/style.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/styles/style.css 923 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 851 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21080.5ms | Allocations: 8807)
+Completed 200 OK in 21101ms (Views: 21085.5ms | ActiveRecord: 0.0ms | Allocations: 9170)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:41:47 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (4.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (3.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (6.3ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (2.3ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (2.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (19.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (6.5ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (27.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (23.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (8.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 193ms (Views: 4.8ms | ActiveRecord: 104.2ms | Allocations: 13447)
+
+
+Started GET "/" for ::1 at 2021-11-28 21:42:46 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 5f01557aa6fb3bed4001
+Version: webpack 4.46.0
+Time: 16253ms
+Built at: 11/28/2021 9:43:08 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-70068d6324a2a79fd6b3.js   4.89 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-70068d6324a2a79fd6b3.js.map   3.96 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-70068d6324a2a79fd6b3.js js/hello_react-70068d6324a2a79fd6b3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./app/javascript/styles/style.css] 601 bytes {hello_react} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/styles/style.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/styles/style.css 923 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 851 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22486.1ms | Allocations: 8811)
+Completed 200 OK in 22497ms (Views: 22490.6ms | ActiveRecord: 0.0ms | Allocations: 9174)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:43:10 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (6.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (5.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (5.4ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (5.7ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (2.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (24.5ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (4.5ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 393ms (Views: 2.1ms | ActiveRecord: 57.2ms | Allocations: 13403)
+
+
+Started GET "/" for ::1 at 2021-11-28 21:43:52 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 9089d5dd69c1a6583fc9
+Version: webpack 4.46.0
+Time: 28877ms
+Built at: 11/28/2021 9:44:32 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-99b00d1653a6cce9d63a.js   4.89 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-99b00d1653a6cce9d63a.js.map   3.96 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-99b00d1653a6cce9d63a.js js/hello_react-99b00d1653a6cce9d63a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./app/javascript/styles/style.css] 601 bytes {hello_react} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/styles/style.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/styles/style.css 923 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 851 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39430.1ms | Allocations: 8928)
+Completed 200 OK in 39449ms (Views: 39435.7ms | ActiveRecord: 0.0ms | Allocations: 9291)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:44:33 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (49.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (2.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (2.5ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (29.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (6.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (3.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (45.7ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (5.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (5.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (3.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 333ms (Views: 3.5ms | ActiveRecord: 152.7ms | Allocations: 13857)
+
+
+Started GET "/" for ::1 at 2021-11-28 21:49:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/felipelois/Desktop/UC/6º_Año/2º_Semestre/Testing/Proyectos/Proyecto-B/testing-proyecto-b/public/packs
+[Webpacker] Hash: 8193ae1ee030c1a242aa
+Version: webpack 4.46.0
+Time: 23728ms
+Built at: 11/28/2021 9:49:34 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-a0dd5a11683215017502.js   4.89 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-a0dd5a11683215017502.js.map   3.96 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-a0dd5a11683215017502.js js/hello_react-a0dd5a11683215017502.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 988 bytes {hello_react} [built]
+[./app/javascript/styles/style.css] 601 bytes {hello_react} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/styles/style.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/styles/style.css 923 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 851 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28604.4ms | Allocations: 8826)
+Completed 200 OK in 28624ms (Views: 28612.2ms | ActiveRecord: 0.0ms | Allocations: 9192)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:49:35 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (3.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (2.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (1.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (2.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (2.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (11.8ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.9ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (2.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (2.9ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 128ms (Views: 3.5ms | ActiveRecord: 32.8ms | Allocations: 9412)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:51:36 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (8.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (6.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (2.4ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (1.9ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.1ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (8.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (2.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (3.3ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (6.6ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (2.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (29.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 634ms (Views: 19.1ms | ActiveRecord: 71.1ms | Allocations: 8719)
+
+
+Started GET "/movies" for ::1 at 2021-11-28 21:51:37 -0300
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mMovie Load (52.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:9:in `map'
+  [1m[36mSchedule Load (2.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 1]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (2.2ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mTheater Load (4.8ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (11.0ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 2]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mCACHE Theater Load (0.0ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 3]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mTheater Load (5.3ms)[0m  [1m[34mSELECT "theaters".* FROM "theaters" WHERE "theaters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:10:in `block in get_all_info'
+  [1m[36mSchedule Load (3.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 4]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (1.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 5]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+  [1m[36mSchedule Load (3.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/models/movie.rb:9:in `get_all_info'
+Completed 200 OK in 185ms (Views: 12.4ms | ActiveRecord: 86.2ms | Allocations: 10418)
+
+
