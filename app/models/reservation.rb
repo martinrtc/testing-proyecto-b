@@ -16,4 +16,13 @@ class Reservation < ApplicationRecord
 
     seats
   end
+
+  def self.check_seats(schedule_id, date, row, seats)
+    theater_seats = self.used_seats(schedule_id, date)
+    seats.each do |seat|
+      if theater_seats[row][seat] == 1
+        raise Exeption.new("Used seat")
+      end
+    end
+  end
 end
