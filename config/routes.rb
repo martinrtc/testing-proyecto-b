@@ -20,8 +20,10 @@ Rails.application.routes.draw do
   post 'create_user', to: 'users#create'
   post 'create_movie', to: 'movies#create'
   post 'create_schedule', to: 'schedules#create'
-  post 'create_reservation', to: 'reservation#create'
+  post 'create_reservation', to: 'reservations#create'
   get 'movies', to: 'movie#index'
+  get 'reservations', to: 'reservation#index'
+  # get 'reservations/show', to: 'reservation#show'
   get 'all_theaters', to: 'theater#index'
   get 'all_schedules', to: 'schedules#seats'
 end

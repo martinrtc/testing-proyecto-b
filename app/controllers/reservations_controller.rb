@@ -1,5 +1,6 @@
 class ReservationsController < ApplicationController
-  before_action :set_reservation, only: %i[ show update destroy ]
+  include Response
+  before_action :set_reservation, only: %i[ update destroy ]
 
   # GET /reservations
   # GET /reservations.json
@@ -10,6 +11,10 @@ class ReservationsController < ApplicationController
   # GET /reservations/1
   # GET /reservations/1.json
   def show
+    puts(params[:user_email])
+    @user = User.find_by(email: params[:user_email])
+    @reservation = Reservation.where(user_id: @user.id)
+    json_response(@reservation)
   end
 
   # POST /reservations

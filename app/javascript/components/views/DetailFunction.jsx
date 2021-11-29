@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Button, ListItem, List, Typography, TextField } from '@mui/material';
+import { useParams, Link } from 'react-router-dom';
 // import DesktopDatePicker from "@material-ui/pickers";
 
 export default function DetailFunction() {
+  const { id } = useParams();
+  const [Movie, setMovie] = useState();
+  const [Schedule, setSchedule] = useState();
   const [name, setName] = useState();
   const [mail, setMail] = useState();
   const [date, setDate] = useState(new Date('2014-08-18T21:11:54'));
@@ -31,10 +35,8 @@ export default function DetailFunction() {
   };
 
   const createReservation = () => {
-      console.log('date', date);
-      console.log('row', row);
-      console.log('seats', seat);
-      const jsonValue = {date: date, row: row,seats: seat, user_id: ""}
+      list[row][seat] = 1;
+      const jsonValue = {date: date, row: row,seats: list,schedule_id: id, user_name: name, user_email: mail}
       const requestOptions = {
           method: 'POST',
           headers: {
@@ -42,7 +44,7 @@ export default function DetailFunction() {
           },
           body: JSON.stringify(jsonValue),
         };
-      // fetch('/create_reservation', requestOptions);
+      fetch('/create_reservation', requestOptions);
   };
 
   useEffect(() => {
@@ -52,20 +54,33 @@ export default function DetailFunction() {
           'Content-Type': 'application/json',
         },
       };
-      // fetch("/movies", requestOptions)
-      //   .then((response) => {
-      //     return response.json();
-      // })
-      // .then((data) => {
-      //     setMovies(data);
-      //   })
+      fetch(`/schedules/${id}`, requestOptions)
+        .then((response) => {
+          return response.json();
+      })
+      .then((data) => {
+          console.log("Looog", data);
+          setSchedule(data);
+          return data;
+      })
+      .then((data) => {
+          return fetch(`/movies/${data.movie_id}`, requestOptions)
+      })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+          console.log("LooogMovie", data);
+          setMovie(data);
+      })
       if (seat != null) {
         list[row][seat] = 0;
       };
-  }, [seat]);
+  }, []);
 
   return (
     <div>
+      <Link to="/">Volver</Link>
       <Typography gutterBottom variant="h4" component="div" align="center">
         Información para Reservar
       </Typography>
@@ -107,7 +122,8 @@ export default function DetailFunction() {
         Reserva de asientos
       </Typography>
       <div className="imgReservas">
-        <img height="280" width="500" alt="photo" src="https://as.com/meristation/imagenes/2021/01/25/noticias/1611576361_977797_1611576540_sumario_grande.jpg" />
+      {Movie != null ? 
+                (<img height="280" width="500" alt="photo" src={Movie.movie.url} />): (<div/>)}
       </div>
       <div className="seats">
         <Box sx={{ flexGrow: 1 }} align="center">
