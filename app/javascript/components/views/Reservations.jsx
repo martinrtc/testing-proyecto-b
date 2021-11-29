@@ -21,7 +21,7 @@ export default function Reservations() {
               'Content-Type': 'application/json',
             },
           };
-        fetch(`/reservations/${mail}`, requestOptions)
+        fetch('/reservations/show', requestOptions)
           .then((response) => {
             return response.json();
         })

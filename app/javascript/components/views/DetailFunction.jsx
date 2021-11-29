@@ -7,13 +7,13 @@ export default function DetailFunction() {
   const { id } = useParams();
   const [Movie, setMovie] = useState();
   const [Schedule, setSchedule] = useState();
-  const [list, setList] = useState();
+  const [list, setList] = useState(null);
   const [name, setName] = useState();
   const [mail, setMail] = useState();
-  const [date, setDate] = useState(new Date('2014-08-18T21:11:54'));
-  const [row, setRow] = useState();
+  const [date, setDate] = useState(new Date());
+  const [row, setRow] = useState(null);
   const [seat, setSeat] = useState();
-  // var list = [[1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+  const [listToSend, setlistToSend] = useState([-1,[]]);
 
   const handleDate = (event) => {
     setDate(event.target.value);
@@ -29,15 +29,21 @@ export default function DetailFunction() {
   const handleReservation = (rowIndex, seatIndex) => {
     console.log('rowIndex', rowIndex);
     console.log('seatIndex', seatIndex);
-    setRow(rowIndex);
     setSeat(seatIndex);
+    setRow(rowIndex);
+    if (listToSend[0] !== rowIndex) {
+      listToSend[1].forEach(seat => {list[listToSend[0]][seat] = 0})
+      listToSend[0] = rowIndex;
+      listToSend[1] = [];
+    }
     list[rowIndex][seatIndex] = 2;
-    console.log("Listaaaaaa", list);
+    listToSend[1].push(seatIndex);
+    setlistToSend(listToSend);
   };
 
   const createReservation = () => {
-      list[row][seat] = 1;
-      const jsonValue = {date: date, row: row,seats: list,schedule_id: id, user_name: name, user_email: mail}
+      // list[row][seat] = 1;
+      const jsonValue = {date: date, row: listToSend[0],seats: listToSend[1],schedule_id: id, user_name: name, user_email: mail}
       const requestOptions = {
           method: 'POST',
           headers: {
@@ -46,6 +52,25 @@ export default function DetailFunction() {
           body: JSON.stringify(jsonValue),
         };
       fetch('/create_reservation', requestOptions);
+  };
+
+  const updateSeats = () => {
+    console.log(`/theaters/${id}?date=${date}`);
+    const requestOptions = {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    };
+    fetch(`/theaters/${id}?date=${date}`, requestOptions)
+        .then((response) => {
+          return response.json();
+      })
+      .then((data) => {
+          console.log("Looog=>", data);
+          setList(data);
+          return data;
+      })
   };
 
   useEffect(() => {
@@ -73,20 +98,21 @@ export default function DetailFunction() {
       .then((data) => {
           console.log("LooogMovie", data);
           setMovie(data);
-      })
-      fetch(`/theaters/${id}?date=${date}`, requestOptions)
-        .then((response) => {
-          return response.json();
-      })
-      .then((data) => {
-          console.log("Vamoooos", data);
-          setList(data);
-          return data;
-      })
+      });
+      // console.log("calro---->", `/theaters/${id}?date=${date}`);
+      // fetch(`/theaters/${id}?date=${date}`, requestOptions)
+      //   .then((response) => {
+      //     return response.json();
+      // })
+      // .then((data) => {
+      //     console.log("Looog", data);
+      //     setList(data);
+      //     return data;
+      // })
       if (seat != null) {
         list[row][seat] = 0;
       };
-  }, []);
+  }, [date]);
 
   return (
     <div>
@@ -127,6 +153,7 @@ export default function DetailFunction() {
             shrink: true,
           }}
         />
+        <Button variant="contained" onClick={() => updateSeats()}>Buscar Disponibles</Button>
       </div>
       <Typography gutterBottom variant="h4" component="div" align="center">
         Reserva de asientos
@@ -137,25 +164,28 @@ export default function DetailFunction() {
       </div>
       <div className="seats">
         <Box sx={{ flexGrow: 1 }} align="center">
-          {list !== null ?
-            list.map((row, rowIndex) =>
-            <List>
-                <ListItem>
-                {row.map((seat, seatIndex) =>
-                  seat === 0 ? 
-                    (<Button onClick={() => handleReservation(rowIndex, seatIndex)} variant="contained">{seatIndex + 1}</Button>) 
-                    : 
-                    (
-                      seat === 1 ?
-                    (<Button variant="contained" disabled>{seatIndex + 1}</Button>) 
-                    :
-                    (
-                      <Button variant="contained" color='warning'>{seatIndex + 1}</Button>)
-                    )
-                    )}
-                </ListItem>
-            </List>
-          ): (<div/>)}
+          {list !== null ? (
+            list.map((row, rowIndex) => 
+              <List>
+                  <ListItem>
+                  {row !== null ? (
+                    row.map((seat, seatIndex) =>
+                      seat === 0 ? 
+                        (<Button onClick={() => handleReservation(rowIndex, seatIndex)} variant="contained">{seatIndex + 1}</Button>) 
+                        : 
+                        (
+                          seat === 1 ?
+                        (<Button variant="contained" disabled>{seatIndex + 1}</Button>) 
+                        :
+                        (
+                          <Button variant="contained" color='warning'>{seatIndex + 1}</Button>)
+                        )
+                        )):(<div/>)
+                      }
+                  </ListItem>
+              </List>
+            )): (<div/>)
+          }
         </Box>
       </div>
       <div className="Fields">
