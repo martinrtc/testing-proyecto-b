@@ -27,14 +27,14 @@ export default function Functions() {
     
     return (
         <div align="center">
-            <h1>Funciones</h1>
-            {movies != null ? 
-                movies.map((movie) => (
-                    <div className="cardStyle">
-                      <MovieCard id={movie.movie.id} url={movie.movie.url} name={movie.movie.name}/>
-                    </div>
-                    ))
-                    : (<div/>)}
+          <h1>Funciones</h1>
+          {movies != null ? 
+              movies.map((movie) => (
+                  <div className="cardStyle">
+                    <MovieCard url={movie.movie.url} name={movie.movie.name} schedule={movie.schedule}/>
+                  </div>
+                  ))
+                  : (<div/>)}
         </div>
         // {movie.movie.name}
         // <Box sx={{ flexGrow: 1 }}>

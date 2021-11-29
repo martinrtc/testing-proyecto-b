@@ -4,6 +4,7 @@ import functions from '../../styles/style';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Box, Button, Typography, TextField } from '@mui/material';
+import TextReservas from '../../styles/style';
 
 export default function Reservations() {
     const [mail, setMail] = useState();
@@ -32,19 +33,21 @@ export default function Reservations() {
     return (
         <div align="center">
             <h2>Ingrese su correo para visualizar sus reservas</h2>
-            <Card sx={{ maxWidth: 400 }}>
-                <CardContent>
-                    <TextField
-                        required
-                        id="outlined-mail"
-                        label="Mail"
-                        value={mail}
-                        onChange={handleMail}
-                        helperText="Mail de la reserva"
-                        size="small"
-                    />
-                </CardContent>
-            </Card>
+            <div className="TextReservas">
+                <Card sx={{ maxWidth: 400 }}>
+                    <CardContent>
+                        <TextField
+                            required
+                            id="outlined-mail"
+                            label="Mail"
+                            value={mail}
+                            onChange={handleMail}
+                            helperText="Mail de la reserva"
+                            size="small"
+                        />
+                    </CardContent>
+                </Card>
+            </div>
             {/* {movies != null ? 
                 movies.map((movie) => (
                     <div className="cardStyle">

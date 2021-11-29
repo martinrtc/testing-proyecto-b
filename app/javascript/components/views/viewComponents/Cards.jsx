@@ -7,9 +7,10 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
-export default function MovieCard({id, name, url}) {
+export default function MovieCard({name, url, schedule}) {
+  console.log("aaaaaaaaah", schedule);
   return (
-    <Card sx={{ maxWidth: 400 }} style={{backgroundColor: "rgb:(48, 48, 48)"}}>
+    <Card sx={{ maxWidth: 400 }} style={{borderColor: "#303030"}}>
       <CardMedia
         component="img"
         height="200"
@@ -23,20 +24,27 @@ export default function MovieCard({id, name, url}) {
       </CardContent>
       <CardActions>
         MATINE:
-        <Link to={`/DetailFunction/${id}`}>Sala 1</Link>
-        <Link to={`/DetailFunction/${id}`}>Sala 2</Link>
-        <Link to={`/DetailFunction/${id}`}>Sala 3</Link>
-        <Link to={`/DetailFunction/${id}`}>Sala 4</Link>
+        {schedule.matine.length !== 0 ?
+          schedule.matine.map((sched) => (
+              <Link to={`/DetailFunction/${sched[0].id}`}>{sched[1]}</Link>
+              ))
+              : (<p>No disponible</p>)}
       </CardActions>
       <CardActions>
         TANDA:
-        <Link to={`/DetailFunction/${id}`}>Sala 1</Link>
-        <Link to={`/DetailFunction/${id}`}>Sala 2</Link>
-        <Link to={`/DetailFunction/${id}`}>Sala 3</Link>
+        {schedule.tanda.length !== 0 ?
+          schedule.tanda.map((sched) => (
+              <Link to={`/DetailFunction/${sched[0].id}`}>{sched[1]}</Link>
+              ))
+              : (<p>No disponible</p>)}
       </CardActions>
       <CardActions>
         NOCHE:
-        <Link to={`/DetailFunction/${id}`}>Sala 4</Link>
+        {schedule.nigth.length !== 0 ?
+          schedule.nigth.map((sched) => (
+              <Link to={`/DetailFunction/${sched[0].id}`}>{sched[1]}</Link>
+              ))
+              : (<p>No disponible</p>)}
       </CardActions>
     </Card>
   );

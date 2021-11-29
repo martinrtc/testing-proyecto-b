@@ -6,6 +6,7 @@ import { useParams, Link } from 'react-router-dom';
 export default function DetailFunction() {
   const { id } = useParams();
   const [Movie, setMovie] = useState();
+  const [Schedule, setSchedule] = useState();
   const [name, setName] = useState();
   const [mail, setMail] = useState();
   const [date, setDate] = useState(new Date('2014-08-18T21:11:54'));
@@ -35,7 +36,7 @@ export default function DetailFunction() {
 
   const createReservation = () => {
       list[row][seat] = 1;
-      const jsonValue = {date: date, row: row,seats: list,schedule_id: 1, user_name: name, user_email: mail}
+      const jsonValue = {date: date, row: row,seats: list,schedule_id: id, user_name: name, user_email: mail}
       const requestOptions = {
           method: 'POST',
           headers: {
@@ -53,17 +54,29 @@ export default function DetailFunction() {
           'Content-Type': 'application/json',
         },
       };
-      fetch(`/movies/${id}`, requestOptions)
+      fetch(`/schedules/${id}`, requestOptions)
         .then((response) => {
           return response.json();
       })
       .then((data) => {
+          console.log("Looog", data);
+          setSchedule(data);
+          return data;
+      })
+      .then((data) => {
+          return fetch(`/movies/${data.movie_id}`, requestOptions)
+      })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+          console.log("LooogMovie", data);
           setMovie(data);
-        })
+      })
       if (seat != null) {
         list[row][seat] = 0;
       };
-  }, [seat]);
+  }, []);
 
   return (
     <div>
