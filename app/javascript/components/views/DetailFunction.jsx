@@ -7,12 +7,13 @@ export default function DetailFunction() {
   const { id } = useParams();
   const [Movie, setMovie] = useState();
   const [Schedule, setSchedule] = useState();
+  const [list, setList] = useState();
   const [name, setName] = useState();
   const [mail, setMail] = useState();
   const [date, setDate] = useState(new Date('2014-08-18T21:11:54'));
   const [row, setRow] = useState();
   const [seat, setSeat] = useState();
-  var list = [[1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+  // var list = [[1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
   const handleDate = (event) => {
     setDate(event.target.value);
@@ -73,6 +74,15 @@ export default function DetailFunction() {
           console.log("LooogMovie", data);
           setMovie(data);
       })
+      fetch(`/theaters/${id}?date=${date}`, requestOptions)
+        .then((response) => {
+          return response.json();
+      })
+      .then((data) => {
+          console.log("Vamoooos", data);
+          setList(data);
+          return data;
+      })
       if (seat != null) {
         list[row][seat] = 0;
       };
@@ -127,7 +137,8 @@ export default function DetailFunction() {
       </div>
       <div className="seats">
         <Box sx={{ flexGrow: 1 }} align="center">
-          {list.map((row, rowIndex) => 
+          {list !== null ?
+            list.map((row, rowIndex) =>
             <List>
                 <ListItem>
                 {row.map((seat, seatIndex) =>
@@ -144,7 +155,7 @@ export default function DetailFunction() {
                     )}
                 </ListItem>
             </List>
-          )}
+          ): (<div/>)}
         </Box>
       </div>
       <div className="Fields">
